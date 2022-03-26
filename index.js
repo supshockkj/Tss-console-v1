@@ -2374,10 +2374,10 @@ sendButImage(from,`
 ╰─────────────────╮
 ㅤᬊ᭄ீ͜ 𝐀 𝐐 𝐔 𝐀   𝐁 𝐎 𝐓ूᬊ᭄
 ╭─────────────────╯ `,`
-
-`,buffer,
-[{buttonId:`${prefix}lista`, buttonText: {displayText: 'ᬊ᭄𝐋𝐈𝐒𝐓𝐀 𝐃𝐄 𝐌𝐄𝐍𝐔𝐒ᬊ᭄'}, type: 1}]);
-break
+`, buffer,
+[{buttonId:`${prefix}lista`, buttonText: {displayText: 'LISTA DE MENU'}, type: 1},
+{buttonId: `${prefix}help`, buttonText: {displayText: 'MENU DE AJUDAR'}, type:1}]);
+break;
 
 case 'lista':
 listMsg = {
@@ -10448,12 +10448,9 @@ blabla = fs.readFileSync('./aqua/bonoite.webp')
 conn.sendMessage(from, blabla, sticker, {quoted: info})
 }
 
-if(budy.includes("nada não") || budy.includes("né nada não") || budy.includes("NÉ NADA NÃO") || budy.includes("nada n")) {
+if(budy.includes("Bot Ruim") || budy.includes("bot ruim") || budy.includes("bot lixo") || budy.includes("Bot Lixo")) {
 blabla = fs.readFileSync('./logos/teodeio.webp')
 conn.sendMessage(from, blabla, sticker, {quoted: info})
-await sleep(2000) 
-conn.updatePresence(from, Presence.composing)
-reply("ᬊ᭄𝐒𝐞 𝐍𝐚̃𝐨 𝐞 𝐍𝐚𝐝𝐚, 𝐍𝐚̃𝐨 𝐅𝐚𝐜̧𝐚 𝐄𝐮 𝐏𝐞𝐫𝐝𝐞𝐫 𝐌𝐞𝐮 𝐓𝐞𝐦𝐩𝐨ᬊ᭄")
 }
 
 if(budy.includes("estou triste") || budy.includes("Estou triste") || budy.includes("ESTOU TRISTE") || budy.includes("eu estou triste")) {
@@ -10493,6 +10490,13 @@ tujuh = fs.readFileSync('./audios/gostosa1.mp3');
 conn.sendMessage(from, tujuh, MessageType.audio, {quoted: info, mimetype: 'audio/mp4', ptt:true})
 } 
 }
+if(budy.includes("pix") || budy.includes("Pix") || budy.includes("seu pix") || budy.includes("Seu Pix")) {
+blabla = fs.readFileSync('./logos/pix.webp')
+conn.sendMessage(from, blabla, sticker, {quoted: info})
+await sleep(2000) 
+conn.updatePresence(from, Presence.composing)
+reply("💦 OLA HUMANO, SE DESEJA AJUDAR A IGREJA...\n *💠PIX:* uizmadara00135@gmail.com\n\n💦 OBRIGADA HUMANO.")
+}
 
 if(budy.includes("au au") || budy.includes("Au au") || budy.includes("AU AU") || budy.includes("Auuu")) {
 tujuh = fs.readFileSync('./audios/auau.mp3');
@@ -10524,7 +10528,7 @@ tujuh = fs.readFileSync('./audios/mesmo.mp3');
 conn.sendMessage(from, tujuh, MessageType.audio, {quoted: info, mimetype: 'audio/mp4', ptt:true})
 }
 
-if(budy.includes("Qual e seu prefixo") || budy.includes("qual e seu prefixo") || budy.includes("Akame seu prefixo") || budy.includes("Prefixo")) { 
+if(budy.includes("Qual e seu prefixo") || budy.includes("qual e seu prefixo") || budy.includes("aqua seu prefixo") || budy.includes("Prefixo")) { 
 await conn.updatePresence(from, Presence.composing)
 reply(`ᬊ᭄𝐌𝐞𝐮 𝐏𝐫𝐞𝐟𝐢𝐱𝐨? 𝐀𝐪𝐮𝐢 𝐄𝐬𝐭𝐚́: ⟪ ${prefix} ⟫`)
 }
