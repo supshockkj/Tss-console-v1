@@ -10490,12 +10490,12 @@ tujuh = fs.readFileSync('./audios/gostosa1.mp3');
 conn.sendMessage(from, tujuh, MessageType.audio, {quoted: info, mimetype: 'audio/mp4', ptt:true})
 } 
 }
-if(budy.includes("pix") || budy.includes("Pix") || budy.includes("seu pix") || budy.includes("Seu Pix")) {
+if(budy.includes("pix") || budy.includes("Pix") || budy.includes("seu pix") || budy.includes("Seu pix")) {
 blabla = fs.readFileSync('./logos/pix.webp')
 conn.sendMessage(from, blabla, sticker, {quoted: info})
 await sleep(2000) 
 conn.updatePresence(from, Presence.composing)
-reply("💦 OLA HUMANO, SE DESEJA AJUDAR A IGREJA...\n *💠PIX:* uizmadara00135@gmail.com\n\n💦 OBRIGADA HUMANO.")
+reply("💦 OLA HUMANO, SE DESEJA AJUDAR A IGREJA...\n *💠PIX:* Luizmadara00135@gmail.com\n\n💦 OBRIGADA HUMANO.")
 }
 
 if(budy.includes("au au") || budy.includes("Au au") || budy.includes("AU AU") || budy.includes("Auuu")) {
