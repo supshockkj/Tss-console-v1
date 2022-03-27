@@ -8183,6 +8183,7 @@ txt += `\n\n${NomeDoBot}`
 reply(`${txt.trim()}`)})
 break
 
+
 case 'chance':
 if(!isGroup) return reply('Só pode ser utilizado este comando, em grupo.')
 if(!isModobn) return reply(`Este tipo de comando só pode ser utilizado com o modobrincadeira ativo, fale com um adm ou se você for, apenas digite ${prefix}modobrincadeira 1`)  
