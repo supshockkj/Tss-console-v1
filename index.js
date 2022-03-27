@@ -2376,7 +2376,7 @@ sendButImage(from,`
 ╭─────────────────╯ `,`
 `, buffer,
 [{buttonId:`${prefix}lista`, buttonText: {displayText: 'LISTA DE MENU'}, type: 1},
-{buttonId: `${prefix}aquastore`, buttonText: {displayText: 'AQUA STORE'}, type:1}]);
+{buttonId: `${prefix}menuadm`, buttonText: {displayText: 'MENU ADM'}, type:1}]);
 break;
 
 case 'lista':
@@ -3109,7 +3109,7 @@ reply(`
 ╚═══ꨄ︎•+¹⁸💦💧+¹⁸•ꨄ︎═══╝
 ╭─────────────────╯
  |
- |➥  ${prefix}
+ |➥  ${prefix}minecraft
  |➥  ${prefix}
  |➥  ${prefix}
  |➥  ${prefix}
@@ -3148,7 +3148,7 @@ break;
 
 case 'minecraf18':
 reply('*💦 Aguarde Um Momento... \nJa Estou Enviando o Minecraft 1.18.12*')
-vartermux = 'https://www.mediafire.com/file/mb15jauwabgn9rt/com.termux_118.apk/file'
+vartermux = 'https://www.mediafire.com/file/9c16r1m05qqxcj1/Minecraft_v1.18.12.01.apk/file'
 const mine = await mediafireDl(Minecraft)
 sendFileFromUrl(mine[0].link, document, {mimetype: mine[0].mime, filename: mine[0].nama, quoted: info})
 break
@@ -3163,7 +3163,7 @@ sendButImage(from,`💦 OLA HUNANO,...\n AQUI ESTA O SEU JOGO, ESCOLHA UMA OPÇ�
 break;
 
 case 'linkmine18':
-reply('https://www.mediafire.com/file/mb15jauwabgn9rt/com.termux_118.apk/file')
+reply('https://www.mediafire.com/file/9c16r1m05qqxcj1/Minecraft_v1.18.12.01.apk/file')
 break
 
 case 'termuxx':
@@ -4109,7 +4109,7 @@ reply('「* Adicionar parâmetro 1 ou 0 ')
 break
 
 case 'level':
-if (!isLevelingOn) return reply(`_*ᬊ᭄𝐎 𝐒𝐈𝐒𝐓𝐄𝐌𝐀 𝐃𝐄 𝐗𝐏 𝐄𝐒𝐓𝐀 𝐃𝐄𝐒𝐀𝐁𝐈𝐋𝐈𝐓𝐀𝐃𝐎, 𝐏𝐀𝐑𝐀 𝐀𝐓𝐈𝐕𝐀𝐑 𝐅𝐀𝐋𝐄 𝐂𝐎𝐌 𝐔𝐌 𝐀𝐃𝐌 𝐄 𝐃𝐈𝐆𝐈𝐓𝐄: ${prefix}leveling 1  ᬊ᭄*_ `)
+if (!isLevelingOn) return reply(`_*ᬊ᭄𝐎 𝐒𝐈𝐒𝐓𝐄𝐌𝐀 𝐃𝐄 ??𝐏 𝐄𝐒𝐓𝐀 𝐃𝐄𝐒𝐀𝐁𝐈𝐋𝐈𝐓𝐀𝐃𝐎, 𝐏𝐀𝐑𝐀 𝐀𝐓𝐈𝐕𝐀𝐑 𝐅𝐀𝐋𝐄 𝐂𝐎𝐌 𝐔𝐌 𝐀𝐃𝐌 𝐄 𝐃𝐈𝐆𝐈𝐓𝐄: ${prefix}leveling 1  ᬊ᭄*_ `)
 if (!isGroup) return reply(enviar.msg.grupo)
 const userLevel = getLevelingLevel(sender)
 const userXp = getLevelingXp(sender)
