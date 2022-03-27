@@ -3154,6 +3154,7 @@ sendFileFromUrl(mine[0].link, document, {mimetype: mine[0].mime, filename: mine[
 break
 
 case 'minecraft':
+case 'mine18':
 buffer = await getBuffer(`${8}`)
 sendButImage(from,`💦 OLA HUNANO,...\n AQUI ESTA O SEU JOGO, ESCOLHA UMA OPÇÃO ABAIXO`,
 `${NickDono}`, buffer,
@@ -4108,7 +4109,7 @@ reply('「* Adicionar parâmetro 1 ou 0 ')
 break
 
 case 'level':
-if (!isLevelingOn) return reply(`_*ᬊ᭄𝐎 𝐒𝐈𝐒𝐓𝐄𝐌𝐀 𝐃𝐄 𝐗𝐏 𝐄𝐒𝐓𝐀 𝐃𝐄𝐒𝐀𝐁𝐈𝐋𝐈𝐓𝐀??𝐎, 𝐏𝐀𝐑𝐀 𝐀𝐓𝐈𝐕𝐀𝐑 𝐅𝐀𝐋𝐄 𝐂𝐎𝐌 𝐔𝐌 𝐀𝐃𝐌 𝐄 𝐃𝐈𝐆𝐈𝐓𝐄: ${prefix}leveling 1  ᬊ᭄*_ `)
+if (!isLevelingOn) return reply(`_*ᬊ᭄𝐎 𝐒𝐈𝐒𝐓𝐄𝐌𝐀 𝐃𝐄 𝐗𝐏 𝐄𝐒𝐓𝐀 𝐃𝐄𝐒𝐀𝐁𝐈𝐋𝐈𝐓𝐀𝐃𝐎, 𝐏𝐀𝐑𝐀 𝐀𝐓𝐈𝐕𝐀𝐑 𝐅𝐀𝐋𝐄 𝐂𝐎𝐌 𝐔𝐌 𝐀𝐃𝐌 𝐄 𝐃𝐈𝐆𝐈𝐓𝐄: ${prefix}leveling 1  ᬊ᭄*_ `)
 if (!isGroup) return reply(enviar.msg.grupo)
 const userLevel = getLevelingLevel(sender)
 const userXp = getLevelingXp(sender)
