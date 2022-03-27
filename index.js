@@ -3092,7 +3092,7 @@ case 'aquastore':
 case 'apps':
 reply(` 
 ╔═══ꨄ︎•+¹⁸💦💧+¹⁸•ꨄ︎═══╗
-       ᬊ᭄ 𝐀𝐐𝐔𝐀     𝐉𝐎𝐆𝐎𝐒ᬊ᭄      
+       ᬊ᭄ 𝐀𝐐𝐔𝐀     𝐀𝐏𝐏ᬊ᭄      
 ╚═══ꨄ︎•+¹⁸💦💧+¹⁸•ꨄ︎═══╝
  |
  |➥  ${prefix}
@@ -3105,7 +3105,7 @@ reply(`
  |➥  ${prefix}
 ╰─────────────────╮
 ╔═══ꨄ︎•+¹⁸💦💧+¹⁸•ꨄ︎═══╗
-         ᬊ᭄ 𝐀𝐐𝐔𝐀    𝐀𝐏𝐏ᬊ᭄      
+       ᬊ᭄ 𝐀𝐐𝐔𝐀    𝐉𝐎𝐆𝐎𝐒ᬊ᭄      
 ╚═══ꨄ︎•+¹⁸💦💧+¹⁸•ꨄ︎═══╝
 ╭─────────────────╯
  |
@@ -3119,7 +3119,7 @@ reply(`
  |➥  ${prefix}
 ╰─────────────────╮
 ╔═══ꨄ︎•+¹⁸💦💧+¹⁸•ꨄ︎═══╗
-         ᬊ᭄ 𝐀𝐐𝐔𝐀    𝐖𝐏𝐏ᬊ᭄      
+       ᬊ᭄ 𝐀𝐐𝐔𝐀    𝐖𝐏𝐏ᬊ᭄      
 ╚═══ꨄ︎•+¹⁸💦💧+¹⁸•ꨄ︎═══╝
 ╭─────────────────╯
  |
@@ -3145,6 +3145,25 @@ sendButImage(from,`💦 𝐀𝐐𝐔𝐀 𝐁𝐎𝐓 𝐕1 (𝐜𝐫𝐢𝐩�
 break;
 
 //========(FUNÇÕES-PREMIUM-AQUI)=======\\
+
+case 'minecraf18':
+reply('*💦 Aguarde Um Momento... \nJa Estou Enviando o Minecraft 1.18.12*')
+vartermux = 'https://www.mediafire.com/file/mb15jauwabgn9rt/com.termux_118.apk/file'
+const mine = await mediafireDl(Minecraft)
+sendFileFromUrl(mine[0].link, document, {mimetype: mine[0].mime, filename: mine[0].nama, quoted: info})
+break
+
+case 'minecraft':
+buffer = await getBuffer(`${8}`)
+sendButImage(from,`💦 OLA HUNANO,...\n AQUI ESTA O SEU JOGO, ESCOLHA UMA OPÇÃO ABAIXO`,
+`${NickDono}`, buffer,
+[{buttonId:`${prefix}minecraf18`, buttonText: {displayText: `DOWNLOAD APK`}, type: 1},
+{buttonId:`${prefix}linkmine18`, buttonText: {displayText: `LINK MEDIAFIRE`}, type: 1}]);
+break;
+
+case 'linkmine18':
+reply('https://www.mediafire.com/file/mb15jauwabgn9rt/com.termux_118.apk/file')
+break
 
 case 'termuxx':
 reply('*💦 Aguarde Um Momento...* *\nJa Estou Enviando o Termux 0.118*')
@@ -4089,7 +4108,7 @@ reply('「* Adicionar parâmetro 1 ou 0 ')
 break
 
 case 'level':
-if (!isLevelingOn) return reply(`_*ᬊ᭄𝐎 𝐒𝐈𝐒𝐓𝐄𝐌𝐀 𝐃𝐄 𝐗𝐏 𝐄𝐒𝐓𝐀 𝐃𝐄𝐒𝐀𝐁𝐈𝐋𝐈𝐓𝐀𝐃𝐎, 𝐏𝐀𝐑𝐀 𝐀𝐓𝐈𝐕𝐀𝐑 𝐅𝐀𝐋𝐄 𝐂𝐎𝐌 𝐔𝐌 𝐀𝐃𝐌 𝐄 𝐃𝐈𝐆𝐈𝐓𝐄: ${prefix}leveling 1  ᬊ᭄*_ `)
+if (!isLevelingOn) return reply(`_*ᬊ᭄𝐎 𝐒𝐈𝐒𝐓𝐄𝐌𝐀 𝐃𝐄 𝐗𝐏 𝐄𝐒𝐓𝐀 𝐃𝐄𝐒𝐀𝐁𝐈𝐋𝐈𝐓𝐀??𝐎, 𝐏𝐀𝐑𝐀 𝐀𝐓𝐈𝐕𝐀𝐑 𝐅𝐀𝐋𝐄 𝐂𝐎𝐌 𝐔𝐌 𝐀𝐃𝐌 𝐄 𝐃𝐈𝐆𝐈𝐓𝐄: ${prefix}leveling 1  ᬊ᭄*_ `)
 if (!isGroup) return reply(enviar.msg.grupo)
 const userLevel = getLevelingLevel(sender)
 const userXp = getLevelingXp(sender)
@@ -8397,7 +8416,7 @@ const teupai11 = suamae11[Math.floor(Math.random() * suamae11.length)]
 const teupai21 = suamae21[Math.floor(Math.random() * suamae21.length)]
 var shipted1 = ["1%", `2%`, `3%`, `4%`, `5%`, `6%`, `7`, `%`, `9%`, `10`, `11%`, `12%`,`13%`, `14%`, `15%`, `16%`, `17%`, `1%`, `19%`, `20%`, `21%`, `22`, `23%`, `24%`, `25%`, `26%`, `27%`, `2%`, `27%`, `2%`, `29%`, `30%`, `31%`, `32%`, `33%`, `34%`, `35%`, `36%`, `37%`, `3%`, `39%`, `40%`, `41%`, `42%`, `43%`, `44%`, `45%`, `46%`, `47%`, `4%`, `49%`, `50%`, `51%`, `52%`, `53%`, `54%`, `55%`, `56%`, `57%`, `5%`, `59%`, `60%`, `61%`, `62%`, `63%`, `64%`, `65%`, `66%`, `67%`, `6%`, `69%`, `70%`, `71%`, `72%`, `73%`, `74%`, `75%`, `76%`, `77%`, `7%`, `79%`, `0%`, `1%`, `2%`, `5%`, `4%`, `5%`, `6%`, `7%`, `%`, `9%`, `90%`, `91%`, `92%`, `93%`, `94%`, `95%`, `96%`, `97%`, `9%`, `99%`, `100%`]
 const shipted = shipted1[Math.floor(Math.random() * shipted1.length)]
-jet = `ᬊ᭄𝐄𝐮, 𝐀 𝐃𝐞𝐮𝐬?? 𝐀𝐪𝐮𝐚, 𝐀𝐜𝐨𝐧𝐬𝐞𝐥𝐡𝐨 𝐕𝐨𝐜𝐞̂𝐬 𝐒𝐞 𝐏𝐞𝐠𝐚𝐫ᬊ᭄\n\nᬊ᭄ 🙎🏼‍♂️ @${teupai11.jid.split('@')[0]}\nᬊ᭄ 🙎🏼‍♀️ @${teupai21.jid.split('@')[0]}\n\n𝐀 𝐂𝐡𝐚𝐧𝐜𝐞 𝐃𝐞 𝐈𝐬𝐬𝐨 𝐝𝐚 𝐂𝐞𝐫𝐭𝐨 𝐞́: ${shipted}`
+jet = `ᬊ᭄𝐄𝐮, 𝐀 𝐃𝐞𝐮𝐬𝐚 𝐀𝐪𝐮𝐚, 𝐀𝐜𝐨𝐧𝐬𝐞𝐥𝐡𝐨 𝐕𝐨𝐜𝐞̂𝐬 𝐒𝐞 𝐏𝐞𝐠𝐚𝐫ᬊ᭄\n\nᬊ᭄ 🙎🏼‍♂️ @${teupai11.jid.split('@')[0]}\nᬊ᭄ 🙎🏼‍♀️ @${teupai21.jid.split('@')[0]}\n\n𝐀 𝐂𝐡𝐚𝐧𝐜𝐞 𝐃𝐞 𝐈𝐬𝐬𝐨 𝐝𝐚 𝐂𝐞𝐫𝐭𝐨 𝐞́: ${shipted}`
 membr.push(teupai11.jid)
 membr.push(teupai21.jid)
 mentions(jet, membr, true)
