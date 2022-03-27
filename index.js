@@ -6498,23 +6498,52 @@ sendStickerFromUrl(from,emoji.images[idemot].url, selo)
 break
 
 case 'rename':
-case 'roubar':  
-if (!isQuotedSticker) return reply('Marque uma figurinha...')
-encmediats = await getFileBuffer(info.message.extendedTextMessage.contextInfo.quotedMessage.stickerMessage, 'sticker')
-var kls = q
-var pack = kls.split("/")[0];
-var author2 = kls.split("/")[1];
-if (!q) return reply('*E o autor e o nome do pacote?*')
-if (!pack) return reply(`*por favor escreve o formato certo: ${prefix + command} sad/bla*`)
-if (!author2) return reply(`*por favor escreve o formato certo: ${prefix + command} sad/dms*`)
+case 'roubar':
+if (!isQuotedSticker) return reply('Marque uma figurinha...')  
+var namaPackss = q.substring(0, q.indexOf('/') - 0)
+var authorPackss = q.substring(q.lastIndexOf('/') + 1)
+texto = body.slice(7)
+if (isDoubleByte(texto)) return reply('[ !  ] Não é permitido letras modificadas nem emojis!!')
 reply(enviar.espere)
-const bas64 = `data:image/jpeg;base64,${encmediats.toString('base64')}`
-var mantap = await convertSticker(bas64, `${author2}`, `${pack}`)
-var sti = new Buffer.from(mantap, 'base64');
-conn.sendMessage(from, {sticker: sti, contextInfo: { externalAdReply:{title: `${pack}|${author2}`,body:"", previewType:"PHOTO",thumbnail: sti}}}, {quoted: info})
-.catch((err) => {
-reply(`❎ Error, tenta mais tarde`); 
+stiker_wm = JSON.parse(JSON.stringify(info).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
+dlstiker_wm = await conn.downloadAndSaveMediaMessage(stiker_wm)
+stickerpackid = "com.snowcorp.stickerly.android.stickercontentprovider b5e7275f-f1de-4137-961f-57becfad34f2"
+packname = namaPackss;
+author = authorPackss;
+exif321 = getRandom('.exif')
+exifst = getRandom('.webp')
+googlelink = ` `;
+applelink = ` `;
+json = {"sticker-pack-id": stickerpackid, "sticker-pack-name": packname, "sticker-pack-publisher": author, "android-app-store-link": googlelink, "ios-app-store-link": applelink}
+len = JSON.stringify(json).length
+f = Buffer.from([0x49, 0x49, 0x2A, 0x00, 0x08, 0x00, 0x00, 0x00, 0x01, 0x00, 0x41, 0x57, 0x07, 0x00])
+aaa = [0x00, 0x00, 0x16, 0x00, 0x00, 0x00]
+if (len > 256) {
+len = len - 256
+aaa.unshift(0x01)
+} else {
+aaa.unshift(0x00)
+}
+fff = Buffer.from(aaa)
+ffff = Buffer.from(JSON.stringify(json))
+if (len < 16) {
+len = len.toString(16)
+len = "0" + len
+} else {
+len = len.toString(16)
+}
+ff = Buffer.from(len, "hex")
+wm = Buffer.concat([f, ff, fff, ffff])
+fs.writeFile(exif321, wm, function(err) {
+if (err) return console.log(err);
+exec(`webpmux -set exif ${exif321} undefined.webp -o ${exifst}`, (err) => {
+if (err) return console.log(err);
+conn.sendMessage(from, fs.readFileSync(exifst), sticker, {quoted: info})
+fs.unlinkSync(exifst)
+fs.unlinkSync(exif321)
+fs.unlinkSync('undefined.webp')
 })
+});
 break
 
 case 'sc':
@@ -8142,7 +8171,7 @@ case 'gerarnick':
 case 'fazernick':
 nick = args.join(' ')
 if(!nick) return reply('Escreva o Nick ou nome que você quer personalizar.')
-axios.get(`https://aleatoryapi.herokuapp.com/api/fazernick?nome=${nick}&apikey=ale203`)
+axios.get(`https://aleatoryapi.herokuapp.com/api/fazernick?nome=${nick}&apikey=key-expr`)
 .then(dados => {
 const emoji = `🩸`
 nicks = dados.data
