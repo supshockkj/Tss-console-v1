@@ -2376,7 +2376,7 @@ sendButImage(from,`
 ╭─────────────────╯ `,`
 `, buffer,
 [{buttonId:`${prefix}lista`, buttonText: {displayText: 'LISTA DE MENU'}, type: 1},
-{buttonId: `${prefix}help`, buttonText: {displayText: 'MENU DE AJUDAR'}, type:1}]);
+{buttonId: `${prefix}aquastore`, buttonText: {displayText: 'AQUA STORE'}, type:1}]);
 break;
 
 case 'lista':
@@ -2546,7 +2546,7 @@ await conn.sendMessage(from, destrava(prefix), text, {quoted: info})
 break 
 
 case 'seradm':
-if (!SoDono) return reply(`𝐏𝐨𝐧𝐡𝐚-𝐬𝐞 𝐍𝐨 𝐒𝐞𝐮 𝐋𝐮𝐠𝐚𝐫, 𝐒𝐞𝐮 𝐈𝐧𝐬𝐨𝐥𝐞𝐧𝐭𝐞, 𝐐𝐮𝐞𝐦 𝐕𝐨𝐜𝐞̂ 𝐏𝐞𝐧𝐬𝐚 𝐐𝐮𝐞 𝐄́?. 𝐍𝐚̃𝐨 𝐎𝐮𝐬𝐞 𝐀𝐬𝐬𝐮𝐦𝐢𝐫 𝐚 𝐏𝐨𝐬𝐢𝐜̧𝐚̃𝐨 𝐃𝐞 𝐑𝐞𝐢 𝐒𝐞𝐧𝐝𝐨 𝐓𝐚̃𝐨 𝐅𝐫𝐚𝐜𝐨.`)
+if (!SoDono) return reply(`𝐏𝐨𝐧𝐡𝐚-𝐬𝐞 𝐍𝐨 𝐒𝐞𝐮 𝐋𝐮𝐠𝐚𝐫, 𝐒𝐞𝐮 𝐈𝐧𝐬𝐨𝐥𝐞𝐧𝐭𝐞, 𝐐𝐮𝐞𝐦 𝐕𝐨𝐜𝐞̂ 𝐏𝐞𝐧𝐬𝐚 𝐐𝐮𝐞 𝐄́?. 𝐍𝐚̃𝐨 𝐎𝐮𝐬𝐞 𝐀𝐬𝐬𝐮𝐦𝐢𝐫 𝐚 𝐏𝐨𝐬𝐢𝐜̧𝐚̃𝐨 𝐃𝐞 𝐑𝐞𝐢 𝐒𝐞𝐧𝐝𝐨 𝐓??̃𝐨 𝐅𝐫𝐚𝐜𝐨.`)
 reply(`𝐏𝐫𝐨??𝐭𝐨 𝐌𝐞𝐮 𝐌𝐞𝐬𝐭𝐫𝐞 @${sender.split('@')[0]} 𝐀𝐠𝐨𝐫𝐚 𝐕𝐨𝐜𝐞̂ 𝐞́ 𝐨 𝐌𝐞𝐬𝐭𝐫𝐞 𝐃𝐞𝐬𝐬𝐞 𝐆𝐫𝐮𝐩𝐨.`)
 setTimeout( () => {
 conn.groupMakeAdmin(from, [sender])
@@ -3089,10 +3089,8 @@ ${NickDono}
 break
 
 case 'aquastore':
-case 'lojinha':
-buffer = await getBuffer(`${logo6}`)
-sendButImage(from,`
-*╔═══❖•ೋ°  💙   °ೋ•❖═══╗*
+case 'apps':
+reply(`*╔═══❖•ೋ°  💙   °ೋ•❖═══╗*
            ঔৣ͜͡ீ͜❥͜ 𝐀𝐐𝐔𝐀  𝐒𝐓𝐎𝐑𝐄 ू ፝͜❥
 *╚═══❖•ೋ°  💙   °ೋ•❖═══╝*
 
@@ -3135,17 +3133,8 @@ sendButImage(from,`
 ☆ۣۜۜ͜͡  ➣ ${prefix}
 ☆ۣۜۜ͜͡  ➣ ${prefix}
 ☆ۣۜۜ͜͡  ➣ ${prefix}
-☆ۣۜۜ͜͡  ➣ ${prefix}
-
-,
-`${NickDono}`, buffer,
-[{buttonId:`${prefix}menu`, buttonText: {displayText: `⚫`}, type: 1},
-{buttonId:`${prefix}menuadm`, buttonText: {displayText: `⚫`}, type: 1}]);
-break;
-
-
-
-
+☆ۣۜۜ͜͡  ➣ ${prefix}`)
+break
 
 case 'git':
 case 'gitdobot':
