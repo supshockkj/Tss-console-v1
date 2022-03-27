@@ -8173,7 +8173,7 @@ nick = args.join(' ')
 if(!nick) return reply('Escreva o Nick ou nome que você quer personalizar.')
 axios.get(`https://aleatoryapi.herokuapp.com/api/fazernick?nome=${nick}&apikey=key-expr`)
 .then(dados => {
-const emoji = `🩸`
+const emoji = `[💦]  `
 nicks = dados.data
 txt = '⛥Nicks Gerados Com Sucesso⛥!\n'
 for (let i = 0; i < nicks.length; i++) {
