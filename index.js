@@ -2375,8 +2375,9 @@ sendButImage(from,`
 ㅤᬊ᭄ீ͜ 𝐀 𝐐 𝐔 𝐀   𝐁 𝐎 𝐓ूᬊ᭄
 ╭─────────────────╯ `,`
 `, buffer,
-[{buttonId:`${prefix}lista`, buttonText: {displayText: 'LISTA DE MENU'}, type: 1},
-{buttonId: `${prefix}menuadm`, buttonText: {displayText: 'MENU ADM'}, type:1}]);
+[{buttonId:`${prefix}lista`, buttonText: {displayText: '[💦] LISTA DE MENU [💧]'}, type: 1},
+{buttonId: `${prefix}menuadm`, buttonText: {displayText: '[💦] MENU ADM [💧]'}, type:1},
+{buttonId: `${prefix}brincadeiras`, buttonText: {displayText: '[💦] MENU BRINCADEIRAS [💧]'}, type:1}]);
 break;
 
 case 'lista':
