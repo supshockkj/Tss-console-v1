@@ -123,7 +123,7 @@ const banner2 = cfonts.render(('By: - Supshockkj & & Covexzinkkj - '), {
     lineHeight: 1
   });
  
-const banner3 = cfonts.render((`TSS CONSOLE V1`), {
+const banner3 = cfonts.render((TSS CONSOLE V1`), {
 font: 'simple',
 color: 'system',
 align: 'center',

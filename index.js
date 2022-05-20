@@ -1,8 +1,8 @@
 //[AQUA-BOT_V1] MELHOR BOT DA WEB\\
 //1-KIBA NÃO VAGABUNDA 
-//2-CRÉDITOS @licht.offc
+//2-CRÉDITOS@supshockk.xz
 //3-BASE DO BOT: AKAME BOT 3.1
-//MODIFICAÇÕES[BY: @Licht.offc]\\
+//MODIFICAÇÕES[BY:@supshockk.xz]\\
 
 //=============≠≠==========≠≠=============\\
 
@@ -414,39 +414,39 @@ const vcardbot = `BEGIN:VCARD\n`
 
 const starts = async (conn = new WAConnection()) => {
 conn._maxListeners = 200;
-conn.browserDescription = ["AQUA-BOT", "By: ALEATORY", "0.14.1"];
-conn.browserDescription.push('AQUA BOT V,1','Baileys','Opera');
+conn.browserDescription = ["TSS - CONSOLE", "By: Supshock and Covex", "0.14.1"];
+conn.browserDescription.push('TSS - CONSOLE V1','Baileys','Opera');
 conn.autoReconnect = ReconnectMode.onconnectionLost || 2
 conn.logger.level = 'warn'
 console.log(banner3.string)
 conn.connectOptions.maxRetries = 99999
 conn.on('qr', () => {
-console.log(chalk.white("💦"),chalk.white('Escanear o código acima para iniciar a AQUA-BOT.V1'))
+console.log(chalk.white("🍏"),chalk.white('Escanear o código acima para iniciar a TSS - CONSOLE V1'))
 })
 
 fs.existsSync('./BarBar.json') && conn.loadAuthInfo('./BarBar.json')
 
 conn.on('connecting', () => {
- start('2', '💦 Conexão Divina em Andamento, Aguarde Mestre...')
+ start('2', '🍏 Conexão Divina em Andamento, Aguarde Mestre...')
 })
 
 conn.on('open', () => {
-success('2', '💦 Conexao Divina Confirmada 💧')
+success('2', '🍏 Conexao Divina Confirmada 🍏')
 
 
-console.log(chalk.magenta("\n\n💧"), chalk.keyword("pink")("[ YOUTUBE ]"), chalk.gray("LICHT SAN"))
+console.log(chalk.magenta("\n\n🍏"), chalk.keyword("pink")("[ YOUTUBE ]"), chalk.gray(" TSS "))
 
 
-console.log(chalk.magenta("💧"), chalk.keyword("cyan")("[ INSTAGRAM ]"), chalk.gray("@Licht.offc"))
+console.log(chalk.magenta("🍏"), chalk.keyword("cyan")("[ INSTAGRAM ]"), chalk.gray("@covexx"))
 
 
-console.log(chalk.magenta("💧"), chalk.keyword("pink")("[ INSTAGRAM ]"), chalk.gray("@Aquabot.wpp"))
+console.log(chalk.magenta("🍏"), chalk.keyword("pink")("[ INSTAGRAM ]"), chalk.gray("@Supshock.xz"))
 
 
-console.log(chalk.magenta("💧"), chalk.keyword("cyan")("[ LICHT SAN ]"), chalk.gray("55 31 9 7541-6530"))
+console.log(chalk.magenta("🍏"), chalk.keyword("cyan")("[ Supshock ]"), chalk.gray("55 21 9 9929-0535"))
 
 
-console.log(chalk.magenta("💧"), chalk.keyword("pink")("[ AQUA BOT ]"), chalk.gray("55 31 9 9117-9654"))
+console.log(chalk.magenta("🍏"), chalk.keyword("pink")("[ TSS - CONSOLE ]"), chalk.gray("55 31 9 9117-9654"))
 
 }) 
 
@@ -456,7 +456,7 @@ timeoutMs: 30 * 1000
 
 fs.writeFileSync('./BarBar.json', JSON.stringify(conn.base64EncodedAuthInfo(), null, '\t'))
 conn.on('close', () => {
-rc = '💦 A conexão Divina Caiu...'
+rc = '🍏 A conexão Divina Caiu...'
 console.log(color(rc,'red'))
 })
 
@@ -584,7 +584,7 @@ mem = anu.participants[0]
 try {
 ppimg = await conn.profilePictureUrl(`${mem.split('@')[0]}@c.us`)
 } catch {
-ppimg = 'https://telegra.ph/file/9228dbda6b1e943f4f4f2.jpg'
+ppimg = 'https://telegra.ph/file/60b77add701ea4830cdd0.jpg'
 }
 
 if(isByed) {
@@ -796,7 +796,7 @@ var enviarmen = mensagens[Math.floor(Math.random() * mensagens.length)]
 
 enviar = {
 espere: `${enviarmen}`,
-successo: '️❬ ✔ ❭ Sucesso 💧',
+successo: '️❬ ✔ ❭ Sucesso 🔥',
 levelon: '_*ᬊ᭄ SISTEMA DE XP ATIVOᬊ᭄*_',
 leveloff: '_*ᬊ᭄ SISTEMA DE XP 𝐃𝐄𝐒𝐀𝐓𝐈𝐕𝐀𝐃𝐎ᬊ᭄*_',
 levelnoton: '_*ᬊ᭄ SISTEMA DE XP 𝐍𝐀̃𝐎 𝐄𝐒𝐓𝐀 𝐀𝐓𝐈𝐕𝐎ᬊ᭄*_',
@@ -956,7 +956,7 @@ if(time2 > "19:00:00"){
 var tempo = 'Boa noite'
                                         }
 
-const fotothumb = {text: 'oi', sendEphemeral: true,"externalAdReply": {"title": `💦 Olá, Humano ${pushname}`,"body":`💦Siga Meu Criador: @Licht.offc`,"previewType": "PHOTO","thumbnailUrl": "","thumbnail": fs.readFileSync('./logos/logo2.jpg'),"sourceUrl": `oi https://api.whatsapp.com/send?phone=${setting.numerodono}&text=*opa*%20${NickDono}%20*vim*%20*pela*:${NomeDoBot}`},mentionedJid:[sender]
+const fotothumb = {text: 'oi', sendEphemeral: true,"externalAdReply": {"title": ` Olá, Humano ${pushname}`,"body":`Siga Meu Criador:@supshockk.xz`,"previewType": "PHOTO","thumbnailUrl": "","thumbnail": fs.readFileSync('./logos/logo2.jpg'),"sourceUrl": `oi https://api.whatsapp.com/send?phone=${setting.numerodono}&text=*opa*%20${NickDono}%20*vim*%20*pela*:${NomeDoBot}`},mentionedJid:[sender]
 }
 
 const reply = (ytb) => {
@@ -2283,7 +2283,7 @@ const datt = moment.tz('America/Sao_Paulo').format('DD/MM/YY');
 img = (`${logo}`)
 wew = await getBuffer(img)
 gbutsan = [
-  {buttonId:`${prefix}cttdono`, buttonText: {displayText: `<𝐕𝐂𝐀𝐑𝐃:${NickDono}>`}, type: 1},{buttonId:`${prefix}heroku`, buttonText: {displayText: '︎✍︎𝐇??𝐑𝐎??𝐔☢︎︎'}, type: 1},{buttonId:`${prefix}preço`, buttonText: {displayText: '$𝐓𝐚𝐛𝐞𝐥𝐚 𝐝𝐞 𝐏𝐫𝐞𝐜̧𝐨$'}, type: 1}]
+  {buttonId:`${prefix}menudono`, buttonText: {displayText: `[🍏]  DONO  [🍏]`}, type: 1},{buttonId:`${prefix}git`, buttonText: {displayText: '︎[🍏]  GIT TSS CONSOLE  [🍏]'}, type: 1},{buttonId:`${prefix}planos`, buttonText: {displayText: '[🍏]  ALUGE-ME  [🍏]'}, type: 1}]
 mhan = await conn.prepareMessage(from, wew, image,{quoted: selo})
  varbut = {
 imageMessage: mhan.message.imageMessage,
@@ -2296,7 +2296,6 @@ await conn.sendMessage(from, varbut, MessageType.buttonsMessage)
 break
 
 case 'blarp':
-
 buffer = await getBuffer (`https://telegra.ph/file/7fec315258cbf9e26b281.mp4`)
 sendButVideo(from,`Texto do menu`,'_*texto transparente*_', buffer, [{buttonId:`.owner`,buttonText: {displayText: 'Dono'}, type: 1}], {quoted:selo});
 break
@@ -2314,11 +2313,11 @@ uptime = process.uptime()
 anu = `${logo}`
   buffer = await getBuffer(anu)
 sendButImage(from,`
-ㅤ *╔═══❖•ೋ°ৡৢ͜͡  💧 𖥨֗°ೋ•❖═══╗*
-ㅤㅤㅤ           ᬊ᭄ீ͜ 𝐀 𝐐 𝐔 𝐀   𝐁 𝐎 𝐓ूᬊ᭄
-ㅤ *╚═══❖•ೋ°ৡৢ͜͡  💧 𖥨֗°ೋ•❖═══╝*
+ㅤ *╔═══❖•ೋ°ৡৢ͜͡  🍏 𖥨֗°ೋ•❖═══╗*
+ㅤㅤㅤ       ᬊ᭄ீ͜𝐓 𝐒 𝐒 - 𝐂𝐎𝐍𝐒𝐎𝐋𝐄 ूᬊ᭄
+ㅤ *╚═══❖•ೋ°ৡৢ͜͡  🍏 𖥨֗°ೋ•❖═══╝*
  
-*ᬊ͜͡ 💧PREFIXO:* ⟪•  ${prefix}  •⟫
+*ᬊ͜͡ 🔥PREFIXO:* ⟪•  ${prefix}  •⟫
 *ᬊ͜͡ 👤OLÁ:* ⟪${named}⟫
 *ᬊ͜͡ 🏆XP:* ${nickxp}
 *ᬊ͜͡ 💎 LEVEL:* ${nicklevel}
@@ -2327,9 +2326,9 @@ sendButImage(from,`
 *ᬊ͜͡ 📅DATA:* ${dattaa}
 
 
-*╔═══ꨄ︎•+¹⁸💦💧+¹⁸•ꨄ︎═══╗* 
+*╔═══ꨄ︎•+¹⁸🔥🍏🔥+¹⁸•ꨄ︎═══╗* 
         ᬊ᭄ 𝐎𝐏𝐂̧𝐀̃𝐎 𝐌𝐄𝐍𝐔ᬊ᭄      
-*╚═══ꨄ︎•+¹⁸💦💧+¹⁸•ꨄ︎═══╝*
+*╚═══ꨄ︎•+¹⁸🔥🍏🔥+¹⁸•ꨄ︎═══╝*
  |
  |➥  ${prefix}HELP
  |➥  ${prefix}DONO
@@ -2339,10 +2338,11 @@ sendButImage(from,`
  |➥  ${prefix}MENUOTAKU
  |➥  ${prefix}ALTERADORES
  |➥  ${prefix}BRINCADEIRAS
+ |➥  ${prefix}HYPE
 ╰─────────────────╮
-*╔═══ꨄ︎•+¹⁸💦💧+¹⁸•ꨄ︎═══╗* 
+*╔═══ꨄ︎•+¹⁸🔥🍏🔥+¹⁸•ꨄ︎═══╗* 
          ᬊ᭄ 𝐌𝐄𝐍𝐔 𝐀𝐃𝐌ᬊ᭄      
-*╚═══ꨄ︎•+¹⁸💦💧+¹⁸•ꨄ︎═══╝*
+*╚═══ꨄ︎•+¹⁸🔥🍏🔥+¹⁸•ꨄ︎═══╝*
 ╭─────────────────╯
  |➥  ${prefix}anagrama 1 / 0
  |➥  ${prefix}antidocumento 1 / 0  
@@ -2358,9 +2358,9 @@ sendButImage(from,`
  |➥  ${prefix}antivideo 1 / 0
  |➥  ${prefix}leveling 1 / 0  
 ╰─────────────────╮
-*╔═══ꨄ︎•+¹⁸💦💧+¹⁸•ꨄ︎═══╗* 
+*╔═══ꨄ︎•+¹⁸🔥🍏🔥+¹⁸•ꨄ︎═══╗* 
        ᬊ᭄ 𝐁𝐑𝐈𝐍𝐂𝐀𝐃𝐄𝐈𝐑𝐀𝐒ᬊ᭄      
-*╚═══ꨄ︎•+¹⁸💦💧+¹⁸•ꨄ︎═══╝*
+*╚═══ꨄ︎•+¹⁸🔥🍏🔥+¹⁸•ꨄ︎═══╝*
 ╭─────────────────╯
  |➥  ${prefix}casal    
  |➥  ${prefix}rankgay      
@@ -2375,9 +2375,9 @@ sendButImage(from,`
 ㅤᬊ᭄ீ͜ 𝐀 𝐐 𝐔 𝐀   𝐁 𝐎 𝐓ूᬊ᭄
 ╭─────────────────╯ `,`
 `, buffer,
-[{buttonId:`${prefix}lista`, buttonText: {displayText: '[💦] MENU LIST [💧]'}, type: 1},
-{buttonId: `${prefix}menuadm`, buttonText: {displayText: '[💦] MENU ADM [💧]'}, type:1},
-{buttonId: `${prefix}brincadeiras`, buttonText: {displayText: '[💦] MENU BRINCADEIRAS [💧]'}, type:1}]);
+[{buttonId:`${prefix}lista`, buttonText: {displayText: '[🍏] MENU LIST [🔥]'}, type: 1},
+{buttonId: `${prefix}planos`, buttonText: {displayText: '[🍏] CONTRATE-ME  [🔥]'}, type:1},
+{buttonId: `${prefix}brincadeiras`, buttonText: {displayText: '[🍏] MENU BRINCADEIRAS [🔥]'}, type:1}]);
 break;
 
 case 'lista':
@@ -2471,7 +2471,7 @@ case 'menuadm':
 case 'menuadma':
 case 'adm':  
 if (!SoDono)
-if (!isGroupAdmins) return reply ('💦 ᏙϴᏟᎬ̂ ΝᎬᎷ Ꭼ́ ᎪᎠᎷ\nΝᎪ̃ϴ ᏢᎡᎬᏟᏆՏᎪ ᏙᎬᎡ ᎬՏͲᎬ ᎷᎬΝႮ')
+if (!isGroupAdmins) return reply ('🍏 ᏙϴᏟᎬ̂ ΝᎬᎷ Ꭼ́ ᎪᎠᎷ\nΝᎪ̃ϴ ᏢᎡᎬᏟᏆՏᎪ ᏙᎬᎡ ᎬՏͲᎬ ᎷᎬΝႮ')
 const bla = fs.readFileSync('audios/admin.mp3')
 conn.sendMessage(from, bla, MessageType.audio, {quoted: info, mimetype: 'audio/mp4', ptt:true})
 img = (`${logo2}`)
@@ -2486,10 +2486,10 @@ case 'odono':
 case 'dono': 
 numerodnofc = setting.numerodono
 wew = await getBuffer(`${logo5}`) 
-mhan = await conn.sendMessage(from, wew,  MessageType.video, {mimetype: 'video/gif', quoted: selo, caption: infodono(prefix)})
+await conn.sendMessage(from, wew, image, {quoted: selo, caption: dono(prefix)})
 break 
 
-case 'programador': 
+case 'dono': 
 buffer = await getBuffer(`${logo2}`)
 sendButImage(from,`𝐀𝐪𝐮𝐢 𝐝𝐞𝐢𝐱𝐨 𝐂𝐓𝐓 𝐝𝐨 𝐦𝐞𝐮 𝐃𝐎𝐍𝐎`,
 `𝐒𝐞 𝐪𝐮𝐢𝐬𝐞𝐫 𝐩𝐨𝐝𝐞 𝐚𝐭𝐞́ 𝐬𝐞 𝐢𝐧𝐬𝐜𝐫𝐞𝐯𝐞𝐫 𝐧𝐨 𝐜𝐚𝐧𝐚𝐥 𝐝𝐨 𝐜𝐫𝐢𝐚𝐝𝐨𝐫 𝐩𝐫𝐚 𝐟𝐢𝐜𝐚𝐫 𝐩𝐨𝐫 𝐝𝐞𝐧𝐭𝐫𝐨 𝐝𝐚𝐬 𝐚𝐭𝐮𝐚𝐥𝐢𝐳𝐚𝐜̧𝐨̃𝐞𝐬`, buffer,
@@ -2500,12 +2500,13 @@ break
 case 'menudono':
 case 'donomenu':  
 if(!SoDono) return reply('𝐏𝐨𝐧𝐡𝐚-𝐬𝐞 𝐍𝐨 𝐒𝐞𝐮 𝐋𝐮𝐠𝐚𝐫 𝐒𝐞𝐮 𝐇𝐮𝐦𝐚𝐧𝐨 𝐈𝐧𝐬𝐨??𝐞𝐧𝐭𝐞\n 𝐍𝐚̃𝐨 𝐎𝐮𝐬𝐞 𝐀𝐬𝐬𝐮𝐦𝐢𝐫 𝐚 𝐏𝐨𝐬𝐢𝐜̧𝐚̃𝐨 𝐃𝐞 𝐑𝐞𝐢 𝐒𝐞𝐧𝐝𝐨 𝐓𝐚̃𝐨 𝐅𝐫𝐚𝐜𝐨.')
-wew = await getBuffer(`${logo11}`) 
-mhan = await conn.sendMessage(from, wew,  MessageType.video, {mimetype: 'video/gif', quoted: selo, caption: menudono(prefix)})
+wew = await getBuffer(`${logo5}`) 
+await conn.sendMessage(from, wew, image, {quoted: selo, caption: dono(prefix)})
 break
  
 case 'insta':
-reply(`https://instagram.com/licht.offc?utm_medium=copy_link}`)
+case 'instagram':
+reply(`*[🍏] SIGA MEU CRIADOR NO INSTAGRAM*\n*[🔥] LINK:*  https://instagram.com/licht.offc?utm_medium=copy_link`)
 break
 
 case 'efeitosimg':
@@ -2547,7 +2548,7 @@ await conn.sendMessage(from, destrava(prefix), text, {quoted: info})
 break 
 
 case 'seradm':
-if (!SoDono) return reply(`𝐏𝐨𝐧𝐡𝐚-𝐬𝐞 𝐍𝐨 𝐒𝐞𝐮 𝐋𝐮𝐠𝐚𝐫, 𝐒𝐞𝐮 𝐈𝐧𝐬𝐨𝐥𝐞𝐧𝐭𝐞, 𝐐𝐮𝐞𝐦 𝐕𝐨𝐜𝐞̂ 𝐏𝐞𝐧𝐬𝐚 𝐐𝐮𝐞 𝐄́?. 𝐍𝐚̃𝐨 𝐎𝐮𝐬𝐞 𝐀𝐬𝐬𝐮𝐦𝐢𝐫 𝐚 𝐏𝐨𝐬𝐢𝐜̧𝐚̃𝐨 𝐃𝐞 𝐑𝐞𝐢 𝐒𝐞𝐧𝐝𝐨 𝐓??̃𝐨 𝐅𝐫𝐚𝐜𝐨.`)
+if (!SoDono) return reply(`𝐏𝐨𝐧𝐡𝐚-𝐬𝐞 𝐍𝐨 𝐒𝐞𝐮 𝐋𝐮𝐠𝐚𝐫, 𝐒𝐞𝐮 𝐈𝐧𝐬𝐨𝐥𝐞𝐧𝐭𝐞, 𝐐𝐮𝐞𝐦 𝐕𝐨𝐜𝐞̂ 𝐏𝐞𝐧𝐬𝐚 𝐐𝐮𝐞 𝐄́?. 𝐍𝐚̃𝐨 𝐎𝐮𝐬𝐞 𝐀𝐬𝐬𝐮𝐦𝐢𝐫 𝐚 𝐏𝐨𝐬𝐢𝐜̧𝐚̃𝐨 𝐃𝐞 𝐑𝐞𝐢 ??𝐞𝐧𝐝𝐨 𝐓??̃𝐨 𝐅𝐫𝐚𝐜𝐨.`)
 reply(`𝐏𝐫𝐨??𝐭𝐨 𝐌𝐞𝐮 𝐌𝐞𝐬𝐭𝐫𝐞 @${sender.split('@')[0]} 𝐀𝐠𝐨𝐫𝐚 𝐕𝐨𝐜𝐞̂ 𝐞́ 𝐨 𝐌𝐞𝐬𝐭𝐫𝐞 𝐃𝐞𝐬𝐬𝐞 𝐆𝐫𝐮𝐩𝐨.`)
 setTimeout( () => {
 conn.groupMakeAdmin(from, [sender])
@@ -2579,7 +2580,6 @@ break
 
 case 'dono/aqua':
 case 'dono/bot':
-case 'licht/aqua':
 if (!SoDono) return reply(`só aceito ordens do ${NickDono}`)
 if (!isBotGroupAdmins) return reply('Preciso de adm pra isso')
 reply(`*Adeus pessoal eu:${NomeDoBot},eo meu Mestre ${NickDono} temos que ir*`)
@@ -2606,6 +2606,7 @@ conn.groupRemove(from, [sender])
 break
 
 case 'voltar':
+case 'edotensei':
 if (!isGroup) return 
 if (!isGroupAdmins && !info.key.fromMe) return 
 if (!isBotGroupAdmins) return reply(mess.only.Badmin)
@@ -2695,7 +2696,7 @@ if (args.length > 300) return conn.sendMessage(from, 'Máximo 300 caracteres', m
 var nomor = info.participant
 descr = `[CONVITE]\nDe: wa.me/${sender.split("@s.whatsapp.net")[0]}\nLink: ${body.slice(9)}`
 chumbo = [{
-buttonId:`${prefix}entrarlink ${body.slice(9)}`, buttonText: {displayText: '✅ ADD BOT GRUPO ✅'}, type: 1},{buttonId:`${prefix}negarconvite ${sender.split("@s.whatsapp.net")[0]}`,buttonText:{displayText:'🚫 NEGAR CONVITE 🚫'}, type:1}
+buttonId:`${prefix}entrarlink ${body.slice(9)}`, buttonText: {displayText: '[🍏]  ADD BOT GRUPO  [🔥]'}, type: 1},{buttonId:`${prefix}negarconvite ${sender.split("@s.whatsapp.net")[0]}`,buttonText:{displayText:'[❌] NEGAR CONVITE [🩸]'}, type:1}
 ]
 carioca = {
 contentText: `${descr}`, 
@@ -2714,7 +2715,7 @@ if (!SoDono && !isCmdy && !isnit && !info.key.fromMe) return reply(enviar.msg.ow
 if(!isUrl(args[0]) && !args[0].includes('whatsapp.com')) return reply('Cade o Link de Convite Mano?')
 try{
 await conn.acceptInvite (`${q.slice([26])}`)
-reply('Entrei no Grupo')
+reply('*[🍏] Certo Mestre, Ja Entrei No Grupo*')
 } catch {
 reply('Não foi possível entrar no grupo')
 }
@@ -2723,7 +2724,7 @@ break
 case 'negarconvite':
 if (!SoDono && !isCmdy && !isnit && !info.key.fromMe) return reply(enviar.msg.ownerB)
 try{
-teks1 = `🚫Seu Convite Para o Grupo Foi Negado🚫`
+teks1 = `*[🍏]Ola Humano...* \n*Meu Mestre Não Aceitou Seu Convite*`
 var options = {
 text: teks1, 
 contextInfo: {mentionedJid: [sender]}, 
@@ -2738,14 +2739,14 @@ break
 /////////////////////////////////////////
 
 case 'fotoperfil':
-hakai = reply(`*já enviei no seu pv patrão...sua foto de perfil*`)
+hakai = reply(`*Ola Humano... Ja Enviei Sua Foto de Perfil No PV*`)
 try {
 ppimg = await conn.getProfilePicture(`${sender.split('@')[0]}@c.us`)
 } catch {
 ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 }
 const diablinho = body.slice(5)
-diabloz = (`*Ai está,sua foto de perfil*`)
+diabloz = (`*Certo, Aqui Esta Sua Foto De Perfil*`)
 pegarimg = await getBuffer(ppimg)
 conn.sendMessage(sender, pegarimg, MessageType.image, {caption: diabloz, quoted: info},`${diablinho}`)
 await conn.sendMessage(hakai, pegarimg, {quoted:selo})
@@ -2757,12 +2758,12 @@ break
 ////////////(CONSULTA[BOT])\\\\\\\\\\\\\\
 case 'nick':
 case 'nickdono':
-  return reply (`${NickDono}`)
+  return reply (`Meu Mestre e: ${NickDono}`)
 break
 
 case 'nomedobot':
 case 'nomebot':
-  return reply (`${NomeDoBot}`)
+  return reply (`Meu Nome é: ${NomeDoBot}`)
 break 
 
 
@@ -2860,28 +2861,28 @@ break
 
 case 'install':  
 buffer = await getBuffer(`${logo9}`)
-sendButImage(from,`𝐄𝐬𝐭𝐚 𝐩𝐫𝐞𝐩𝐚𝐫𝐚𝐝𝐨 𝐩𝐫𝐚 𝐛𝐚𝐢𝐱𝐚𝐫 𝐚 𝐀𝐊𝐀𝐌𝐄2.0?𝐪𝐮𝐚𝐥𝐪𝐮𝐞𝐫 𝐝𝐮́𝐯𝐢𝐝𝐚 𝐜𝐨𝐧𝐬𝐮𝐥𝐭𝐞:\nwa.me/${setting.numerodono}`,
+sendButImage(from,`𝐎𝐥𝐚́ 𝐇𝐮𝐦𝐚𝐧𝐨...\n𝐃𝐞𝐬𝐞𝐣𝐚 𝐒𝐚𝐛𝐞𝐫 𝐌𝐚𝐢𝐬 𝐒𝐨𝐛𝐫𝐞 𝐌𝐢𝐧𝐡𝐚 𝐈𝐧𝐬𝐭𝐚𝐥𝐚𝐜̧𝐚̃𝐨?`,
 `${NomeDoBot}`, buffer,
-[{buttonId:`${prefix} manual`, buttonText: {displayText: '💦 𝐈𝐍𝐒𝐓𝐀𝐋𝐀𝐂̧𝐀̃𝐎 💧'}, type: 1}
-,{buttonId: `${prefix}gitdobot`, buttonText: {displayText: '💦𝐆𝐈𝐓 𝐀𝐐𝐔𝐀 💧'}, type:1},
-{buttonId: `${prefix}zarchive`, buttonText: {displayText: '💦 𝐙𝐀𝐑𝐂𝐇𝐈𝐕𝐄_𝐏𝐑𝐎💎'}, type:1}
+[{buttonId:`${prefix}manual`, buttonText: {displayText: '[🍏]  MANUAL  [🔥]'}, type: 1}
+,{buttonId: `${prefix}gitdobot`, buttonText: {displayText: '[🍏]  GIT AQUA 1.1  [🔥]'}, type:1},
+{buttonId: `${prefix}menu`, buttonText: {displayText: '[🍏]  MENU  [🔥]'}, type:1}
 ]);
 break;
 
 case 'cript':
 case 'criptografar':
-  return reply(`𝐨𝐥𝐚́ 𝐯𝐜 𝐯𝐞𝐢𝐨 𝐚𝐩𝐫𝐞𝐧𝐝𝐞𝐫 𝐨 𝐪𝐮𝐞 𝐞́ 𝐜𝐫𝐢𝐩𝐭𝐨𝐠𝐫𝐚𝐟𝐚𝐜̧𝐚̃𝐨 𝐧𝐞́? 𝐦𝐚𝐢𝐬 𝐚𝐟𝐢𝐧𝐚𝐥 𝐩𝐫𝐚 𝐪𝐮𝐞 𝐬𝐞𝐫𝐯𝐞 𝐜𝐫𝐢𝐩𝐭 𝐨𝐮 𝐜𝐫𝐢𝐩𝐭𝐨𝐠𝐫𝐚𝐟𝐚𝐜̧𝐚̃𝐨? 1°𝐦𝐞𝐧𝐭𝐞 𝐢𝐬𝐬𝐨 𝐬𝐞𝐫𝐯𝐞 𝐩𝐚𝐫𝐚 𝐪𝐮𝐞 𝐕𝐂 𝐜𝐫𝐢𝐩𝐭 𝐬𝐮𝐚 𝐢𝐧𝐝𝐞𝐱 𝐩𝐚𝐫𝐚 𝐪𝐮𝐞 𝐚𝐬 𝐩𝐞𝐬𝐬𝐨𝐚𝐬 𝐧𝐚̃𝐨 𝐩𝐨𝐬𝐬𝐚𝐦 𝐫𝐨𝐮𝐛𝐚𝐫 𝐬𝐮𝐚 𝐢𝐝𝐞𝐢𝐚 𝐨𝐮 "𝐤𝐢𝐛𝐚𝐫" 𝐦𝐚𝐢𝐬 𝐜𝐨𝐦𝐨 𝐜𝐫𝐢𝐩𝐭𝐨𝐠𝐫𝐚𝐟𝐨?𝐧𝐨 𝐬𝐢𝐭𝐞 ('https://obfuscator.io/')\n 𝐓𝐔𝐓𝐎𝐑𝐈𝐀𝐋:\n('https://youtu.be/W8X0oGko-xI')\n𝐂𝐚𝐬𝐨 𝐯𝐜 𝐝𝐞𝐬𝐞𝐣𝐞 𝐞𝐬𝐬𝐞 𝐁𝐨𝐭 𝐧𝐞𝐠𝐨𝐜𝐢𝐞 𝐜𝐨𝐦 𝐨 𝐩𝐫𝐨𝐠𝐫𝐚𝐦𝐚𝐝𝐨𝐫 𝐝𝐢𝐠𝐢𝐭𝐚𝐧𝐝𝐨: ${prefix}preço\n
+  return reply(`𝐨𝐥𝐚́ 𝐯𝐜 𝐯𝐞𝐢𝐨 𝐚𝐩𝐫𝐞𝐧𝐝𝐞𝐫 𝐨 𝐪𝐮𝐞 𝐞́ 𝐜𝐫𝐢𝐩𝐭𝐨𝐠𝐫𝐚𝐟𝐚𝐜̧𝐚̃𝐨 𝐧𝐞́? 𝐦𝐚𝐢𝐬 𝐚𝐟𝐢𝐧𝐚𝐥 𝐩𝐫𝐚 𝐪𝐮𝐞 𝐬𝐞𝐫𝐯𝐞 𝐜𝐫𝐢𝐩𝐭 𝐨𝐮 𝐜𝐫𝐢𝐩𝐭𝐨𝐠𝐫𝐚𝐟𝐚𝐜̧𝐚̃𝐨? 1°𝐦𝐞𝐧𝐭𝐞 𝐢𝐬𝐬𝐨 𝐬𝐞𝐫𝐯𝐞 𝐩𝐚𝐫𝐚 𝐪𝐮𝐞 𝐕𝐂 𝐜𝐫𝐢𝐩𝐭 𝐬𝐮𝐚 𝐢𝐧𝐝𝐞𝐱 𝐩𝐚𝐫𝐚 𝐪𝐮𝐞 𝐚𝐬 𝐩𝐞𝐬𝐬𝐨𝐚𝐬 𝐧𝐚̃𝐨 𝐩𝐨𝐬𝐬𝐚𝐦 𝐫𝐨𝐮𝐛𝐚𝐫 𝐬𝐮𝐚 𝐢𝐝𝐞𝐢𝐚 𝐨𝐮 "𝐤𝐢𝐛𝐚𝐫" 𝐦𝐚𝐢𝐬 𝐜𝐨𝐦𝐨 𝐜𝐫𝐢𝐩𝐭𝐨𝐠𝐫𝐚𝐟𝐨?𝐧𝐨 𝐬𝐢𝐭𝐞 ('https://obfuscator.io/')\n 𝐓𝐔𝐓𝐎𝐑𝐈𝐀𝐋:\n('https://youtu.be/W8X0oGko-xI')\n𝐂𝐚𝐬𝐨 𝐯𝐜 𝐝𝐞𝐬𝐞𝐣𝐞 𝐞𝐬𝐬𝐞 𝐁𝐨𝐭 𝐧𝐞𝐠𝐨𝐜𝐢𝐞 𝐜𝐨𝐦 𝐨 𝐩𝐫𝐨𝐠𝐫𝐚𝐦𝐚𝐝𝐨𝐫 𝐝𝐢𝐠𝐢𝐭𝐚𝐧𝐝𝐨: ${prefix}planos\n
   ${NomeDoBot}`)
   break
 
 case 'instruções':
 case 'manual':
 cmdo = reply(`
-*╔═══❖•ೋ°   💙   °ೋ•❖═══╗*
+*╔═══❖•ೋ°  🍏   °ೋ•❖═══╗*
               ঔৣ͜͡ீ͜❥͜ 𝐈𝐍𝐒𝐓𝐀𝐋𝐀𝐂̧𝐀̃𝐎 ू ፝͜❥
-*╚═══❖•ೋ°   💙   °ೋ•❖═══╝*
+*╚═══❖•ೋ°  🍏   °ೋ•❖═══╝*
 
-💦Olá Humano, Como Vai?
+🍏Olá Humano, Como Vai?
 Eu Sou a Deusa Aqua.
 Este é o Tutorial De instalação...
 
@@ -2892,9 +2893,9 @@ _🔵 Termux_
 _🔵 Gerenciador de Arquivos_
 _🔵 Número Secundário_ *(recomendação)*
 
-◆ ▬▬▬▬▬ ❴💦AQUA💦❵ ▬▬▬▬▬ ◆
+◆ ▬▬▬▬▬ ❴🍏TSS🍏❵ ▬▬▬▬▬ ◆
 
-💧 Abaixo Esta O Tutoria De instalação
+🔥 Abaixo Esta O Tutoria De instalação
 
 *1️⃣ Ação:* _Extrair Arquivo_
 •Deve Extrair o Arquivo _AquaBot_ Para o Seu Armazenamento Principal.
@@ -2939,9 +2940,9 @@ caso uma não funcione, tente a outra.
 *⚠️OBS:* Após Este Comando, Irá Gerar um QRCODE, você irá precisar de um Outro Celular, Pra Tirar Foto desse QRcode, e Escanear no Seu Whatsapp, Lembrando que o QRCODE dura 25 segundos. Então Seja Rápido.
 
 *Vídeo Com Tutorial:* https://youtu.be/DUbZ2TTqvqQ
-*Dúvidas:* wa.me/553175416530
+*Dúvidas:* wa.me/5521999290535
 ${NomeDoBot}
-𝐁𝐘: @Licht.Offc`)
+𝐁𝐘:@supshockk.xz`)
 break
 
 
@@ -3017,6 +3018,27 @@ o PT que coloquei, é a linguagem, então pode por no lugar as 2 letras que defi
 conn.sendMessage(from, txt, text, {quoted: selo})
 break
 
+case 'xvd':			
+case 'xvds':
+case 'xvideos':
+case 'xvideo':
+if (isBanned) return 
+if (!isPremium) return reply(ind.only.premium)
+try {
+if (args.length < 1) return reply(`Você precisa colocar um link!\n Use: *_xvdss mia khalifa* (por exemplo) e use o link.`)
+if (!isUrl(args[0]) && !args[0].includes('https://xvideos.com/')) return reply(ind.error.Iv)
+reply(enviar.espere)
+res = await fetchJson(`https://mnazria.herokuapp.com/api/porndownloadxvideos?url=${args[0]}`, {method: 'get'})
+buffer = await getBuffer(res.mp4)
+switzg.sendMessage(from, {audio: buffer, mimetype: 'audio/mp4'}, {quoted: info})
+switzg.sendMessage(from, {video: buffer, mimetype: 'video/mp4'}, {quoted: info})
+} catch (e) {
+console.log(`Erro:`, color(e,'red'))
+reply(`${e}`)
+}
+break
+
+
 case 'infocontador':
 await conn.sendMessage(from, infocontador(prefix), text, {quoted: selo})
 break
@@ -3042,14 +3064,13 @@ case 'gitbtt':
 await conn.sendMessage(from, gitdobot(prefix), text, {quoted: selo})
 break
 
-case 'infobot':
 case 'infoajuda':
 sendButMessage(from,`
    ${NomeDoBot}
 
-*╔═══❖•ೋ°ৡৢ͜͡  💧 𖥨֗°ೋ•❖═══╗*
+*╔═══❖•ೋ°ৡৢ͜͡  🔥 𖥨֗°ೋ•❖═══╗*
 ㅤㅤㅤ           ᬊ᭄ீ͜ 𝐀 𝐐 𝐔 𝐀   𝐁 𝐎 𝐓ूᬊ᭄
- *╚═══❖•ೋ°ৡৢ͜͡  💧 𖥨֗°ೋ•❖═══╝*
+ *╚═══❖•ೋ°ৡৢ͜͡  🔥 𖥨֗°ೋ•❖═══╝*
 
 Olá, Bem Vindo(a) Humano(a) ao Menu de Ajuda.
 
@@ -3089,86 +3110,32 @@ ${NickDono}
 [{buttonId:`${prefix}menu`, buttonText: {displayText:`OK  ${NomeDoBot}`}, type: 1}]);
 break
 
-case 'aquastore':
-case 'apps':
-reply(` 
-╔═══ꨄ︎•+¹⁸💦💧+¹⁸•ꨄ︎═══╗
-       ᬊ᭄ 𝐀𝐐𝐔𝐀     𝐀𝐏𝐏ᬊ᭄      
-╚═══ꨄ︎•+¹⁸💦💧+¹⁸•ꨄ︎═══╝
- |
- |➥  ${prefix}
- |➥  ${prefix}
- |➥  ${prefix}
- |➥  ${prefix}
- |➥  ${prefix}
- |➥  ${prefix}
- |➥  ${prefix}
- |➥  ${prefix}
-╰─────────────────╮
-╔═══ꨄ︎•+¹⁸💦💧+¹⁸•ꨄ︎═══╗
-       ᬊ᭄ 𝐀𝐐𝐔𝐀    𝐉𝐎𝐆𝐎𝐒ᬊ᭄      
-╚═══ꨄ︎•+¹⁸💦💧+¹⁸•ꨄ︎═══╝
-╭─────────────────╯
- |
- |➥  ${prefix}minecraft
- |➥  ${prefix}
- |➥  ${prefix}
- |➥  ${prefix}
- |➥  ${prefix}
- |➥  ${prefix}
- |➥  ${prefix}
- |➥  ${prefix}
-╰─────────────────╮
-╔═══ꨄ︎•+¹⁸💦💧+¹⁸•ꨄ︎═══╗
-       ᬊ᭄ 𝐀𝐐𝐔𝐀    𝐖𝐏𝐏ᬊ᭄      
-╚═══ꨄ︎•+¹⁸💦💧+¹⁸•ꨄ︎═══╝
-╭─────────────────╯
- |
- |➥  ${prefix}
- |➥  ${prefix}
- |➥  ${prefix}
- |➥  ${prefix}
- |➥  ${prefix}
- |➥  ${prefix}
- |➥  ${prefix}
- |➥  ${prefix}`)
-break
-
 case 'git':
 case 'gitdobot':
 case 'gitbot':  
 buffer = await getBuffer(`${logo3}`)
-sendButImage(from,`💦 𝐀𝐐𝐔𝐀 𝐁𝐎𝐓 𝐕1 (𝐜𝐫𝐢𝐩𝐭𝐨𝐠𝐫𝐚𝐟𝐚𝐝𝐚)💧\n 𝐍𝐚̃𝐨 𝐩𝐞𝐫𝐜𝐚 𝐚𝐬 𝐚𝐭𝐮𝐚𝐥𝐢𝐳𝐚𝐜𝐨̃𝐞𝐬`,
+sendButImage(from,`🍏 𝐀𝐐𝐔𝐀 𝐁𝐎𝐓 𝐕1.1 (𝐜𝐫𝐢𝐩𝐭𝐨𝐠𝐫𝐚𝐟𝐚𝐝𝐚)🔥\n 𝐍𝐚̃𝐨 𝐩𝐞𝐫𝐜𝐚 𝐚𝐬 𝐚𝐭𝐮𝐚𝐥𝐢𝐳𝐚𝐜𝐨̃𝐞𝐬`,
 `${NomeDoBot}`, buffer,
-[{buttonId:`${prefix}termuxx`, buttonText: {displayText: '💦 𝐓𝐄𝐑𝐌𝐔𝐗 0.118💧'}, type: 1},
-{buttonId: `${prefix}acodee`, buttonText: {displayText: '💦 𝐀𝐂𝐎𝐃𝐄 1.2.143💧'}, type:1},
-{buttonId: `${prefix}aquaaaa`, buttonText: {displayText: '💦 𝐀𝐐𝐔𝐀 𝐁𝐎𝐓 𝐕1(𝐜𝐫𝐢𝐩𝐭)💧'}, type:1}]);
+[{buttonId:`${prefix}termuxx`, buttonText: {displayText: '[🍏]  𝐓𝐄𝐑𝐌𝐔𝐗 0.118 [🔥]'}, type: 1},
+{buttonId: `${prefix}acodee`, buttonText: {displayText: '[🍏]  𝐀𝐂𝐎𝐃𝐄 1.2.143 [🔥]'}, type:1},
+{buttonId: `${prefix}aquaaaa`, buttonText: {displayText: '[🍏]  𝐀𝐐𝐔𝐀 𝐁𝐎𝐓 𝐕1.1 (𝐜𝐫𝐢𝐩𝐭) [🔥]'}, type:1}]);
 break;
 
 //========(FUNÇÕES-PREMIUM-AQUI)=======\\
 
 case 'minecraf18':
-reply('*💦 Aguarde Um Momento... \nJa Estou Enviando o Minecraft 1.18.12*')
+reply('*🍏 Aguarde Um Momento... \nJa Estou Enviando o Minecraft 1.18.12*')
 vartermux = 'https://www.mediafire.com/file/9c16r1m05qqxcj1/Minecraft_v1.18.12.01.apk/file'
 const mine = await mediafireDl(Minecraft)
 sendFileFromUrl(mine[0].link, document, {mimetype: mine[0].mime, filename: mine[0].nama, quoted: info})
 break
-
-case 'minecraft':
-case 'mine18':
-buffer = await getBuffer(`${8}`)
-sendButImage(from,`💦 OLA HUNANO,...\n AQUI ESTA O SEU JOGO, ESCOLHA UMA OPÇÃO ABAIXO`,
-`${NickDono}`, buffer,
-[{buttonId:`${prefix}minecraf18`, buttonText: {displayText: `DOWNLOAD APK`}, type: 1},
-{buttonId:`${prefix}linkmine18`, buttonText: {displayText: `LINK MEDIAFIRE`}, type: 1}]);
-break;
 
 case 'linkmine18':
 reply('https://www.mediafire.com/file/9c16r1m05qqxcj1/Minecraft_v1.18.12.01.apk/file')
 break
 
 case 'termuxx':
-reply('*💦 Aguarde Um Momento...* *\nJa Estou Enviando o Termux 0.118*')
+reply('*🍏 Aguarde Um Momento...* *\nJa Estou Enviando o Termux 0.118*')
 vartermux = 'https://www.mediafire.com/file/mb15jauwabgn9rt/com.termux_118.apk/file'
 const term = await mediafireDl(vartermux)
 sendFileFromUrl(term[0].link, document, {mimetype: term[0].mime, filename: term[0].nama, quoted: info})
@@ -3179,8 +3146,8 @@ reply('https://www.mediafire.com/file/tvto6h42cy2669d/ALEATORY_BOT_1.0.apk/file'
 break
 
 case 'aquaaaa':
-reply('*💦 Certo, Aguarde Um Pouquinho, Já Estou Lhe Enviando Meus Arquivos Criptografados💧*')
-Aqua = 'https://www.mediafire.com/file/oqskjmw3bwxobgq/AQUABOT.zip/file'
+reply('*🍏 Certo, Aguarde Um Pouquinho, Já Estou Lhe Enviando Meus Arquivos Criptografados🔥*')
+Aqua = 'https://www.mediafire.com/file/kt9jsrpn2vlekbg/AquaBot1.zip/file'
 const aqua = await mediafireDl(Aqua)
 sendFileFromUrl(aqua[0].link, document, {mimetype: aqua[0].mime, filename: aqua[0].nama, quoted: info})
 break
@@ -4030,7 +3997,7 @@ break
 case 'fotomenu':
 case 'fundomenu':
 if (!SoDono && !isCmdy && !isnit && !issupre && !ischyt && !info.key.fromMe) return reply(enviar.msg.donosmt)
-if(!isQuotedImage && !isQuotedVideo) return reply("💦 Mestre, Marque Uma Imagem ou Vídeo")
+if(!isQuotedImage && !isQuotedVideo) return reply("🍏 Mestre, Marque Uma Imagem ou Vídeo")
 reply('Você deve marcar uma imagem com esse comando, se não for de primeira, tente novamente, ok? ')
 if ((isMedia && !info.message.videoMessage || isQuotedImage || isQuotedVideo ) && args.length == 0) {
 boij = isQuotedImage || isQuotedVideo ? JSON.parse(JSON.stringify(info).replace('quotedM','m')).message.extendedTextMessage.contextInfo : info
@@ -4051,7 +4018,7 @@ if (!SoDono && !isCmdy && !isnit && !issupre && !ischyt && !info.key.fromMe) ret
 prefix = args[0]
 setting.prefix = prefix
 fs.writeFileSync('./dono/settings.json', JSON.stringify(setting, null, '\t'))
-reply(`💦 𝐂𝐞𝐫𝐭𝐨 𝐌𝐞𝐬𝐭𝐫𝐞, 𝐌𝐞𝐮 𝐏𝐫𝐞𝐟𝐢𝐱𝐨 𝐒𝐞𝐫𝐚́ 𝐄𝐬𝐭𝐞 𝐀𝐠𝐨𝐫𝐚: ${prefix}`)
+reply(`🍏 𝐂𝐞𝐫𝐭𝐨 𝐌𝐞𝐬𝐭𝐫𝐞, 𝐌𝐞𝐮 𝐏𝐫𝐞𝐟𝐢𝐱𝐨 𝐒𝐞𝐫𝐚́ 𝐄𝐬𝐭𝐞 𝐀𝐠𝐨𝐫𝐚: ${prefix}`)
 break
 
 case 'nomegp':
@@ -4059,7 +4026,7 @@ if (!isGroup) return reply(enviar.msg.grupo)
 if (!isGroupAdmins) return reply(enviar.msg.adm)
 if (!isBotGroupAdmins) return reply(enviar.msg.Badmin)
 await conn.groupUpdateSubject(from, `${body.slice(9)}`)
-await conn.sendMessage(from, '💦 𝐏𝐫𝐨𝐧𝐭𝐨, 𝐒𝐞𝐮 𝐆𝐫𝐮𝐩𝐨 𝐀𝐠𝐨𝐫𝐚 𝐓𝐞𝐦 𝐮𝐦 𝐍𝐨𝐯𝐨 𝐍𝐨𝐦𝐞\n𝐆𝐨𝐬𝐭𝐞𝐢... 𝐌𝐚𝐬 𝐒𝐨́ 𝐮𝐦 𝐏𝐨𝐮𝐪𝐮𝐢𝐧𝐡𝐨 ', text, {quoted: info})
+await conn.sendMessage(from, '🍏 𝐏𝐫𝐨𝐧𝐭𝐨, 𝐒𝐞𝐮 𝐆𝐫𝐮𝐩𝐨 𝐀𝐠𝐨𝐫𝐚 𝐓𝐞𝐦 𝐮𝐦 𝐍𝐨𝐯𝐨 𝐍𝐨𝐦𝐞\n𝐆𝐨𝐬𝐭𝐞𝐢... 𝐌𝐚𝐬 𝐒𝐨́ 𝐮𝐦 𝐏𝐨𝐮𝐪𝐮𝐢𝐧𝐡𝐨 ', text, {quoted: info})
 break
 
 case 'fotobot':
@@ -4069,14 +4036,14 @@ if (!isQuotedImage) return reply(`Envie fotos com legendas ${prefix}fotobot ou t
 enmedia = JSON.parse(JSON.stringify(info).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 media = await conn.downloadAndSaveMediaMessage(enmedia)
 await conn.updateProfilePicture(botNumber, media)
-reply('💦 𝐎𝐛𝐫𝐢𝐠𝐚𝐝𝐚 𝐌𝐞𝐬𝐭𝐫𝐞, 𝐏𝐞𝐥𝐚 𝐍𝐨𝐯𝐚 𝐅𝐨𝐭𝐨 𝐝𝐞 𝐏𝐞𝐫𝐟𝐢𝐥')
+reply('🍏 𝐎𝐛𝐫𝐢𝐠𝐚𝐝𝐚 𝐌𝐞𝐬𝐭𝐫𝐞, 𝐏𝐞𝐥𝐚 𝐍𝐨𝐯𝐚 𝐅𝐨𝐭𝐨 𝐝𝐞 𝐏𝐞𝐫𝐟𝐢𝐥')
 break
 
 case 'clonar':
 if (!SoDono && !isCmdy && !isnit && !issupre && !ischyt) return reply('Você quem é o proprietário?')
 if (!isGroup) return reply(enviar.msg.grupo)
 if (!isGroupAdmins) return reply(enviar.msg.adm)
-if (args.length < 1) return reply('💦 𝐌-𝐌𝐞𝐬𝐭𝐫𝐞, 𝐌𝐚𝐫𝐪𝐮𝐞 𝐜𝐨𝐦 @\n𝐎 𝐇𝐮𝐦𝐚𝐧𝐨 𝐐𝐮𝐞 𝐕𝐨𝐜𝐞̂ 𝐃𝐞𝐬𝐞𝐣𝐚 𝐐𝐮𝐞 𝐞𝐮 𝐑𝐨𝐮𝐛𝐞 𝐚 𝐅𝐨𝐭𝐨 𝐝𝐞 𝐏𝐞𝐫𝐟𝐢𝐥')
+if (args.length < 1) return reply('🍏 𝐌-𝐌𝐞𝐬𝐭𝐫𝐞, 𝐌𝐚𝐫𝐪𝐮𝐞 𝐜𝐨𝐦 @\n𝐎 𝐇𝐮𝐦𝐚𝐧𝐨 𝐐𝐮𝐞 𝐕𝐨𝐜𝐞̂ 𝐃𝐞𝐬𝐞𝐣𝐚 𝐐𝐮𝐞 𝐞𝐮 𝐑𝐨𝐮𝐛𝐞 𝐚 𝐅𝐨𝐭𝐨 𝐝𝐞 𝐏𝐞𝐫𝐟𝐢𝐥')
 if (info.message.extendedTextMessage === undefined || info.message.extendedTextMessage === null) return reply('Tag cvk')
 mentioned = info.message.extendedTextMessage.contextInfo.mentionedJid[0]
 let { jid, id, notify } = groupMembers.find(x => x.jid === mentioned)
@@ -4084,9 +4051,9 @@ try {
 pp = await conn.getProfilePicture(id)
 buffer = await getBuffer(pp)
 conn.updateProfilePicture(botNumber, buffer)
-mentions(`💦 𝐂𝐞𝐫𝐭𝐨 𝐌𝐞𝐬𝐭𝐫𝐞\n 𝐀𝐠𝐨𝐫𝐚 𝐄𝐬𝐭𝐨𝐮 𝐔𝐬𝐚𝐧𝐝𝐨 𝐚 𝐅𝐨𝐭𝐨 𝐝𝐞 𝐏𝐞𝐫𝐟𝐢𝐥 𝐃𝐞𝐬𝐬𝐞 𝐇𝐮𝐦𝐚𝐧𝐨: @${id.split('@')[0]}`, [jid], true)
+mentions(`🍏 𝐂𝐞𝐫𝐭𝐨 𝐌𝐞𝐬𝐭𝐫𝐞\n 𝐀𝐠𝐨𝐫𝐚 𝐄𝐬𝐭𝐨𝐮 𝐔𝐬𝐚𝐧𝐝𝐨 𝐚 𝐅𝐨𝐭𝐨 𝐝𝐞 𝐏𝐞𝐫𝐟𝐢𝐥 𝐃𝐞𝐬𝐬𝐞 𝐇𝐮𝐦𝐚𝐧𝐨: @${id.split('@')[0]}`, [jid], true)
 } catch (e) {
-reply('💦 𝐒𝐢𝐧𝐭𝐨 𝐌𝐮𝐢𝐭𝐨 𝐌𝐞𝐬𝐭𝐫𝐞, 𝐌𝐚𝐬 𝐄𝐬𝐬𝐞 𝐇𝐮𝐦𝐚𝐧𝐨 𝐈𝐧𝐬𝐨𝐥𝐞𝐧𝐭𝐞 𝐍𝐚̃𝐨 𝐓𝐞𝐦 𝐅𝐨𝐭𝐨 𝐝𝐞 𝐏𝐞𝐫𝐟𝐢𝐥')
+reply('🍏 𝐒𝐢𝐧𝐭𝐨 𝐌𝐮𝐢𝐭𝐨 𝐌𝐞𝐬𝐭𝐫𝐞, 𝐌𝐚𝐬 𝐄𝐬𝐬𝐞 𝐇𝐮𝐦𝐚𝐧𝐨 𝐈𝐧𝐬𝐨𝐥𝐞𝐧𝐭𝐞 𝐍𝐚̃𝐨 𝐓𝐞𝐦 𝐅𝐨𝐭𝐨 𝐝𝐞 𝐏𝐞𝐫𝐟𝐢𝐥')
 }
 break
 
@@ -4246,7 +4213,7 @@ conn.sendMessage(anu[i].jid, buff, image, {caption: `[ TRANSMIÇÃO DE MY DONO ]
 reply(`transmição foi enviada a ${bahh.length} grupos e ah ${bahhh.length} pvs`)
 } else {
 for (i = 0; i < anu.length; i++) {
-sendMess(anu[i].jid, `💧ঔৣ͜͡ீ͜❥͜𝐀𝐐𝐔𝐀 𝐁𝐎𝐓ू ፝͜❥💧\n\n${body.slice(16)}`)
+sendMess(anu[i].jid, `🔥ᬊ᭄ீ͜𝐓 𝐒 𝐒 - 𝐂𝐎𝐍𝐒𝐎𝐋𝐄 ूᬊ᭄🔥\n\n${body.slice(16)}`)
 }
 reply(`transmição foi enviada a ${bahh.length} grupos e ah ${bahhh.length} pvs`)
 }
@@ -4260,7 +4227,7 @@ conn.sendMessage(bahhh[i].jid, buff, image, {caption: `[ TRANSMIÇÃO DE MY DONO
 reply(`transmição foi enviada para ${bahhh.length} pvs`)
 } else {
 for (i = 0; i < bahhh.length; i++) {
-sendMess(bahhh[i].jid, `💧ঔৣ͜͡ீ͜❥͜𝐀𝐐𝐔𝐀 𝐁𝐎𝐓ू ፝͜❥💧\n\n${body.slice(16)}`)
+sendMess(bahhh[i].jid, `🔥ᬊ᭄ீ͜𝐓 𝐒 𝐒 - 𝐂𝐎𝐍𝐒𝐎𝐋𝐄 ूᬊ᭄🔥\n\n${body.slice(16)}`)
 }
 reply(`transmição foi enviada a ${bahhh.length} pvs`)
 }
@@ -4274,7 +4241,7 @@ conn.sendMessage(bahh[i].jid, buff, image, {caption: `[ TRANSMIÇÃO DE MY DONO 
 reply(`transmição foi enviada a ${bahh.length} grupos`)
 } else {
 for (i = 0; i < bahh.length; i++) {
-sendMess(bahh[i].jid, `💧ঔৣ͜͡ீ͜❥͜𝐀𝐐𝐔𝐀 𝐁𝐎𝐓ू ፝͜❥💧\n\n${body.slice(16)}`)
+sendMess(bahh[i].jid, `🔥ᬊ᭄ீ͜𝐓 𝐒 𝐒 - 𝐂𝐎𝐍𝐒𝐎𝐋𝐄 ूᬊ᭄🔥\n\n${body.slice(16)}`)
 }
 reply(`transmição foi enviada a ${bahh.length} grupos`)
 }
@@ -5240,7 +5207,7 @@ let oki = `
 halogaes = await conn.prepareMessage(from, imagenya, image)
 tombol = [
   {buttonId: `${prefix}playmp3 ${res.all[0].url}`, buttonText: {displayText: `🎶 DOWNLOAD MP3`}, type: 1},
-    {buttonId: `${prefix}playmp4 ${res.all[0].url}`, buttonText: {displayText: `📹 DOWNLOAD MP4`}, type: 1},
+    {buttonId: `${prefix}playmp4 ${res.all[0].url}`, buttonText: {displayText: `📹 DOWNLOAD MP4 (off)`}, type: 1},
 ]
 gbuttonan = {
 imageMessage: halogaes.message.imageMessage,
@@ -5274,27 +5241,24 @@ reply(enviar.error.api)
 }
 break
 
-
 case 'playmp4':
-try {
 playz = args.join(' ')
 if(!playz) return reply('Cade o nome da música/Video?')
 reply(enviar.espere)
-blast = await fetchJson(`https://aleatoryapi.herokuapp.com/api/playmp4?q=${playz}&apikey=key-expr`) 
-blast = blast.resultado
-pla = `✍️𝐓𝐈𝐓𝐔𝐋𝐎: *${blast.titulo}*\n`
-pla += `👥𝐕𝐢𝐬𝐮𝐚𝐥𝐢𝐳𝐚𝐜̧𝐨̃𝐞𝐬: *${blast.visu}*\n`
-pla += `▶️𝐏𝐔𝐁𝐋𝐈𝐂𝐀𝐃𝐎: *${blast.publicado}*\n\n`
-pla += `*Enviando o video, OK📲?*`
-img = await getBuffer(blast.thumb)
+bla = await fetchJson(`https://aleatoryapi.herokuapp.com/api/playmp4?q=${playz}&apikey=${keyaleb}`) 
+bla = bla.resultado
+pla = `Titulo: ${bla.titulo}\n`
+pla += `Visualizações: ${bla.visu}\n`
+pla += `Publicado : ${bla.publicado}\n`
+pla += `Enviando o video, OK?`
+img = await getBuffer(bla.thumb)
 conn.sendMessage(from, img, image, {quoted: info, caption: `${pla}`})
-audiobla = await getBuffer(blast.url)
-conn.sendMessage(from, audiobla, video, {quoted: info, mimetype: 'video/mp4'})
-} catch (e){
-reply(`desculpe mas não achei o que você quer.`)
-console.log(e)
-}
+audiobla = await getBuffer(bla.url)
+conn.sendMessage(from, audiobla, video, {quoted: info, mimetype: 'video/mp4'}).catch(e => {
+reply("ERROR!!")
+})
 break
+
 
 case 'pla2':
 playzin = args.join(' ')
@@ -6575,6 +6539,7 @@ break
 
 case 'fstiker': 
 case 'fsticker':
+case 's':
 case 'f':
 await limitAdd(sender)
 if ((isMedia && !info.message.videoMessage || isQuotedImage) && args.length == 0) {
@@ -6634,9 +6599,9 @@ break
 
 case 'st':
 case 'sticker':
-case 's':
-var a = `AQUA BOT V1`
-var b = `@aquabot.wpp`
+case 'a':
+var a = `Supshockkj V1\nBY: @supshockk.xz`
+var b = `[🍏] SIGA\n@licht.offc\n@aquabot.wpp`
 if (isMedia && !info.message.videoMessage || isQuotedImage ) {
 const encmedia = isQuotedImage   ? JSON.parse(JSON.stringify(info).replace('quotedM','m')).message.extendedTextMessage.contextInfo : info
  media = await conn.downloadAndSaveMediaMessage(encmedia)
@@ -6664,8 +6629,8 @@ fs.unlinkSync(media)
 } else if ((isMedia && info.message.videoMessage.seconds < 11 || isQuotedVideo && info.message.extendedTextMessage.contextInfo.quotedMessage.videoMessage.seconds < 11) && args.length == 0) {
  const encmedia = isQuotedVideo ? JSON.parse(JSON.stringify(info).replace('quotedM','m')).message.extendedTextMessage.contextInfo : info
 const media = await conn.downloadAndSaveMediaMessage(encmedia)
-var a = `AQUA BOT V1`
-var b = `@aquabot.wpp`
+var a = `Supshockkj \nBY: @supshockk.xz`
+var b = `[🍏] SIGA\n@supshockk.xz `
 await createExif(a,b)
 out = getRandom('.webp')
 ffmpeg(media)
@@ -6759,7 +6724,7 @@ case 'previsao':
 if(!isModobn) return reply(`Este tipo de comando só pode ser utilizado com o modobrincadeira ativo, fale com um adm ou se você for, apenas digite ${prefix}modobrincadeira 1`)
 idde = ["30", "76", "90", "72", "83", "73", "83", "74", "92", "100", "94", "48", "37", "53", "63"]
 idadez = idde[Math.floor(Math.random() * (idde.length))]
-morte = `*💦 O Humano:* ${pushname} \n*☠️Ira Morrer Aos ${idadez} Anos*.`
+morte = `*🍏 O Humano:* ${pushname} \n*☠️Ira Morrer Aos ${idadez} Anos*.`
 reply(morte)
 break
 
@@ -6769,7 +6734,7 @@ if(!isModobn) return reply(`Este tipo de comando só pode ser utilizado com o mo
 var chifre = ["ultra extreme gado", "Gado-Master", "Gado-Rei", "Gado", "Escravo-ceta", "Escravo-ceta Maximo", "Gacorno?", "Jogador De Forno Livre<3", "Mestre Do Frifai<3<3", "Gado-Manso", "Gado-Conformado", "Gado-Incubado", "Gado Deus", "Mestre dos Gados", "Topa tudo por buceta", "Gado Comum", "Mini Gadinho", "Gado Iniciante", "Gado Basico", "Gado Intermediario", "Gado Avançado", "Gado Profisional", "Gado Mestre", "Gado Chifrudo", "Corno Conformado", "Corno HiperChifrudo", "Chifrudo Deus", "Mestre dos Chifrudos"]
 var gado = chifre[Math.floor(Math.random() * chifre.length)]
 gadop = `${Math.floor(Math.random() * 100)}`
-hisil = `*💦 Seu Nivel De Gado e:* ${gado}`
+hisil = `*🍏 Seu Nivel De Gado e:* ${gado}`
 reply(hisil)
 break
 
@@ -8174,7 +8139,7 @@ nick = args.join(' ')
 if(!nick) return reply('Escreva o Nick ou nome que você quer personalizar.')
 axios.get(`https://aleatoryapi.herokuapp.com/api/fazernick?nome=${nick}&apikey=key-expr`)
 .then(dados => {
-const emoji = `[💦]  `
+const emoji = `[🍏]  `
 nicks = dados.data
 txt = '⛥Nicks Gerados Com Sucesso⛥!\n'
 for (let i = 0; i < nicks.length; i++) {
@@ -8381,18 +8346,18 @@ break
 
 case 'wiki':
   susp = `ϴᏞᎪ́ ᎻႮᎷᎪΝϴ: @${sender.split("@s.whatsapp.net")[0]}\n𝐀𝐪𝐮𝐢 𝐄𝐬𝐭𝐚́ 𝐌𝐢𝐧𝐡𝐚 𝐁𝐢𝐨𝐠𝐫𝐚𝐟𝐢𝐚 :\n\n
-💧ΝϴᎷᎬ:  Aqua
-💧ᎡᎪᏟ̧Ꭺ : Deusa
-💧ᏀᎬ̂ΝᎬᎡϴ: Feminino
-💧ϴᏞᎻϴՏ: Azul
-💧ᏟᎪᏴᎬᏞϴ: Azul
-💧ϴᏟႮᏢᎪᏟ̧Ꭺ̃ϴ: Sacerdotisa
-💧ᎪᎷᏆᏃᎪᎠᎬՏ: Satou Kazuma, Megumin, Darkness.
+🔥ΝϴᎷᎬ:  Aqua
+🔥ᎡᎪᏟ̧Ꭺ : Deusa
+🔥ᏀᎬ̂ΝᎬᎡϴ: Feminino
+🔥ϴᏞᎻϴՏ: Azul
+🔥ᏟᎪᏴᎬᏞϴ: Azul
+🔥ϴᏟႮᏢᎪᏟ̧Ꭺ̃ϴ: Sacerdotisa
+🔥ᎪᎷᏆᏃᎪᎠᎬՏ: Satou Kazuma, Megumin, Darkness.
 
-💦ՏͲᎪͲႮՏ💦 
-💧ͲᎡᎪᏴᎪᏞᎻϴ: Aventureira
-💧ᎪᎡᎷᎪ: Cajado Divino
-💧ᏢϴᎠᎬᎡᎬՏ: Purificação, Ressurreição, Controle da Água, Soco Divino, Anulação de Maldições` 
+🍏ՏͲᎪͲႮՏ🍏 
+🔥ͲᎡᎪᏴᎪᏞᎻϴ: Aventureira
+🔥ᎪᎡᎷᎪ: Cajado Divino
+🔥ᏢϴᎠᎬᎡᎬՏ: Purificação, Ressurreição, Controle da Água, Soco Divino, Anulação de Maldições` 
 imageMessage = (await conn.prepareMessageMedia({url: res.result.thumb},'imageMessage',{thumbnail: fs.readFileSync('./logos/aqua1.jpg')})).imageMessage
 Break
 
@@ -9018,36 +8983,90 @@ const soundft = fs.readFileSync('audios/qviado.mp3')
 await conn.sendMessage(from, soundft, MessageType.audio, {quoted: info, mimetype: 'audio/mp4', ptt:true})
 break
 
-case 'preço':  
+case 'Infobot':  
 case 'planos':
 case 'alugar':
 case 'comprar':
 buffer = await getBuffer(`${logo13}`)
-sendButImage(from,`ᬊ᭄𝐏𝐋𝐀𝐍𝐎𝐒 𝐀𝐐𝐔𝐀-𝐁𝐎𝐓
-R$ 35,00: 𝐀𝐥𝐞𝐚𝐭𝐨𝐫𝐲𝐁𝐨𝐭-𝐌𝐃 4.2 (𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐨𝐠𝐫𝐚𝐟𝐚𝐝𝐨)
-R$ 30,00: 𝐀𝐥𝐞𝐚𝐭𝐨𝐫𝐲-𝐁𝐨𝐭 4.2 (𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐨𝐠𝐫𝐚𝐟𝐚𝐝𝐨)
-R$ 25,00: 𝐀𝐪𝐮𝐚𝐁𝐨𝐭 𝐯1 (𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐨𝐠𝐫𝐚𝐟𝐚𝐝𝐨)
-R$ 20,00: 𝐏𝐫𝐞𝐦𝐢𝐮𝐦
-R$ 15:00: 𝐀𝐤𝐚𝐦𝐞𝐁𝐨𝐭 2.2 (𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐨𝐠𝐫𝐚𝐟𝐚𝐝𝐨)
-R$ 15,00: 𝐏𝐫𝐚 𝐒𝐞𝐦𝐩𝐫𝐞 𝐞𝐦 2 𝐆𝐫𝐮𝐩𝐨𝐬 
-R$ 10,00: 𝐏𝐫𝐚 𝐒𝐞𝐦𝐩𝐫𝐞 𝐧𝐨 𝐒𝐞𝐮 𝐆𝐫𝐮𝐩𝐨
-R$ 07,00: 𝐏𝐥𝐚𝐧𝐨 𝐌𝐞𝐧𝐬𝐚𝐥
-R$ 03,00: 𝐏𝐥𝐚𝐧𝐨 𝐒𝐞𝐦𝐚𝐧𝐚𝐥
-𝐄𝐧𝐭𝐫𝐞 𝐞𝐦 𝐜𝐨𝐧𝐭𝐚𝐭𝐨 𝐜𝐨𝐦 𝐦𝐞𝐮 𝐏𝐫𝐨𝐠𝐫𝐚𝐦𝐚𝐝𝐨𝐫:
-wa.me/553175416530`,
+sendButImage(from,`
+*╔═══❖•ೋ°  ཌ💙ད  °ೋ•❖═══╗*
+              ᬊ᭄ீ͜𝐓 𝐒 𝐒 - 𝐂𝐎𝐍𝐒𝐎𝐋𝐄 ूᬊ᭄
+*╚═══❖•ೋ°  ཌ💙ད  °ೋ•❖═══╝*
+
+*[🍏]  BOT DE WHATSAPP 24H ON*
+*[🍏]  SUPORTE 100% DISPONÍVEL*
+*[🍏]  ORGANIZE SEU GRUPO*
+*[🍏]  GERENCIE SEU GRUPO*
+*[🍏]  PROTEJA SEU GRUPO*
+*[🍏]  DEIXE SEU GRUPO MAIS ANIMADO*
+
+*____________ᬊᬁPROTEÇÕESᬊᬁ____________*
+
+*[🔥] ANTI-LINK*
+*[🔥] ANTI-FAKE*
+*[🔥] ANTI-CONTATO*
+*[🔥] ANTI-LOCALIZAÇÃO*
+*[🔥] ANTI-DOCUMENTO*
+*[🔥] ANTI-VIDEO*
+*[🔥] ANTI-IMAGEM*
+*[🔥] ANTI-AUDIO*
+*[🔥] ANTI-VIEWONCE*
+
+*____________ᬊᬁRECURSOSᬊᬁ____________*
+*[🔥] CRIAR FIGURINHAS*
+*[🔥] BAIXAR MÚSICAS*
+*[🔥] BAIXAR VIDEOS*
+*[🔥] ABRIR/FECHAR GRUPO COM TIME*
+*[🔥] BAN & KICK*
+*[🔥] BRINCADEIRAS*
+*[🔥] COMANDOS +🔞*
+*[🔥] FIGURINHAS INTERATIVAS*
+*[🔥] ÁUDIOS DE AUTO-RESPOSTA*
+
+*____________ᬊᬁCONTRA-TEᬊᬁ____________*
+*[🍏] DONO OFICIAL:* Supshockj & & Covex 
+*[🔥] CHAT:* wa.me/5521999290535
+*[🔥] CHAT:* wa.me/558586306749
+*[🔥] INSTA:*@supshockk.xz
+
+
+*____________ᬊᬁᬊ᭄ீ͜𝐓 𝐒 𝐒 - 𝐂𝐎𝐍𝐒𝐎𝐋𝐄 ूᬊ᭄ᬊᬁ____________*`,
 `${NickDono}`, buffer,
-[{buttonId:`${prefix}aqua`, buttonText: {displayText: `${NomeDoBot}`}, type: 1},
-{buttonId:`${prefix}yt`, buttonText: {displayText: `ᬊ᭄𝐈𝐧𝐬𝐭𝐚 𝐝𝐨 ${NickDono}✔︎`}, type: 1}]);
+[{buttonId:`${prefix}menubasico`, buttonText: {displayText: `[🍏] MENU PRINCIPAL [🔥]`}, type: 1},
+{buttonId:`${prefix}Instagram`, buttonText: {displayText: `[🍏] INSTA CRIADOR [🔥]`}, type: 1}]);
 break;
 
+case 'hype':
+buffer = await getBuffer(`${logo13}`)
+sendButImage(from,`
+*╔═══❖•ೋ°  ཌ💙ད  °ೋ•❖═══╗*
+             ঔৣ͜͡ீ͜❥͜𝐃𝐈𝐕𝐔𝐋𝐆𝐀𝐂𝐀𝐎ू ፝͜❥
+*╚═══❖•ೋ°  ཌ💙ད  °ೋ•❖═══╝*
+*[🍏] DIVULGUE COM AQUA-BOT OFC*
+*[🍏] TURBINE SUAS VENDAS*
+*[🍏] ALAVANQUE SEU WEB-NEGÓCIO*
+*[🍏] TENHA DIVULGAÇÃO INFINITA*
+*[🍏] MAIS DE 2K DE USUÁRIO DIVULGANDO*
+
+*____________ᬊᬁ METODO ᬊᬁ____________*
+_[🍏]  A "Versão Gratis" do Bot e Liberado Para o Público Instalar no Seu Whatsapp, Ou Seja Se a Pessoa Instalar o Bot e Adicionar em Algum Grupo, As Pessoas Desse Grupo Poderão Ver a Divulgação_
+
+*____________ᬊᬁCONTRA-TEᬊᬁ____________*
+
+*[🍏] DIVULGAÇÃO SIMPLES:* R$ 05,00
+*[🍏] DIVULGAÇÃO NORMAL:* R$ 10,00
+*[🍏] DIVULGAÇÃO AVANÇADA:* R$ 15,00
+*[🍏]  DIVULGAÇÃO PRO:* R$ 20,00`,
+`*[🍏] CHAT:* wa.me/553175416530`, buffer,
+[{buttonId:`${prefix}planos`, buttonText: {displayText: `[🍏] CONTRATE-ME [🔥]`}, type: 1},
+{buttonId:`${prefix}menubasico`, buttonText: {displayText: `[🍏] MENU GERAL [🔥]`}, type: 1}]);
+break;
 
 
 case 'heroku':
   return reply (`
 
 𝗢𝗹𝗮́ @${sender.split("@s.whatsapp.net")[0]} 𝗮𝗸𝗶 𝗲𝘀𝘁𝗮́ 𝗼 𝘁𝘂𝘁𝗼𝗿𝗶𝗮𝗹 𝗱𝗲 𝗵𝗼𝘀𝗽𝗲𝗱𝗮𝗿 𝘀𝗲𝘂 𝗕𝗢𝗧 𝗻𝗼 𝗵𝗲𝗿𝗼𝗸𝘂:
-
-@𝐃𝐢𝐚𝐛𝐥𝐨 𝐓𝐮𝐭𝐨𝐫𝐢𝐚𝐢𝐬
 
 (1)- De tudo : entra no site : 
 
@@ -9345,7 +9364,7 @@ case 'help':
 let bla1 = info.key.fromMe ? conn.user.jid : info.key.remoteJid.endsWith('@g.us') ? info.participant : info.key.remoteJid
 name = conn.contacts[bla1] != undefined ? conn.contacts[bla1].vname || conn.contacts[bla1].notify : undefined
 buffer = await getBuffer(`${logo7}`)
-sendButImage(from,`𝐒𝐄𝐉𝐀 𝐁𝐕:\n @${bla1.split("@s.whatsapp.net")[0]}\n𝐍𝐢𝐂𝐊/𝐍𝐎𝐌𝐄:${name}\nঔৣ͜͡ீ͜❥͜𝐀𝐐𝐔𝐀 𝐁𝐎𝐓 V1ू ፝͜❥`,
+sendButImage(from,`𝐒𝐄𝐉𝐀 𝐁𝐕:\n @${bla1.split("@s.whatsapp.net")[0]}\n𝐍𝐢𝐂𝐊/𝐍𝐎𝐌𝐄:${name}\nᬊ᭄ீ͜𝐓 𝐒 𝐒 - 𝐂𝐎𝐍𝐒𝐎𝐋𝐄 ूᬊ᭄`,
 `${NomeDoBot}`, buffer,
 [{buttonId:`${prefix}install`, buttonText: {displayText: '𝐈𝐧𝐬𝐭𝐚𝐥𝐚𝐜̧𝐚̃𝐨 𝐝𝐨 𝐁𝐎𝐓'}, type: 1},
 {buttonId:`${prefix}menu`, buttonText: {displayText: '⏤͟͟͞͞𝐌𝐞𝐧𝐮'}, type: 1},
@@ -9994,7 +10013,7 @@ const encmedia1 = isQuotedImage ? JSON.parse(JSON.stringify(info).replace('quote
 const dlfile1 = await conn.downloadMediaMessage(encmedia1)
 const bas641 = `data:image/jpeg;base64,${dlfile1.toString('base64')}`
 anu = args.join(' ').split('|')
-satu = anu[0] !== '' ? anu[0] : `Aqua Bot v1`
+satu = anu[0] !== '' ? anu[0] : `𝐓 𝐒 𝐒 - 𝐂𝐎𝐍𝐒𝐎𝐋𝐄 v1`
 sd = `@aquabot.wpp`
 dua = typeof anu[1] !== 'undefined' ? anu[1] : `${sd}`
 var mantap1 = await convertSticker(bas641, `${dua}`, `${satu}`)
@@ -10591,7 +10610,7 @@ blabla = fs.readFileSync('./logos/pix.webp')
 conn.sendMessage(from, blabla, sticker, {quoted: info})
 await sleep(2000) 
 conn.updatePresence(from, Presence.composing)
-reply("💦 OLA HUMANO, SE DESEJA AJUDAR A IGREJA...\n *💠PIX:* Luizmadara00135@gmail.com\n\n💦 OBRIGADA HUMANO.")
+reply("🍏 OLA HUMANO, SE DESEJA AJUDAR A IGREJA...\n *💠PIX:* Luizmadara00135@gmail.com\n\n🍏 OBRIGADA HUMANO.")
 }
 
 if(budy.includes("au au") || budy.includes("Au au") || budy.includes("AU AU") || budy.includes("Auuu")) {
@@ -10756,21 +10775,21 @@ tujuh = fs.readFileSync('./audios/iscmd.mp3');
 conn.sendMessage(from, tujuh, MessageType.audio, {quoted: info, mimetype: 'audio/mp4', ptt:true})
 await sleep (4000)
 sendButMessage(from,`
-*╔═══❖•ೋ°  💙   °ೋ•❖═══╗*
+*╔═══❖•ೋ° 🍏   °ೋ•❖═══╗*
           ঔৣ͜͡ீ͜❥͜𝐂𝐎𝐌𝐔𝐍𝐈𝐂𝐀𝐃𝐎ू ፝͜❥
-*╚═══❖•ೋ°  💙   °ೋ•❖═══╝*
+*╚═══❖•ೋ° 🍏   °ೋ•❖═══╝*
 
 *║ᬊ͜͡ 👤OLA HUMANO:*  ${named}
 *║*
 *║ᬊ͜͡ ❓O COMANDO:* ${prefix}${command} 
 *║ᬊ͜͡ ⁉️ INFELIZMENTE NÃO EXISTE*
 *║*
-*║ᬊ͜͡ 💦 ULTILIZE:* ${prefix}Menu
-*║ᬊ͜͡ 💧 E LEIA O MENU...*
+*║ᬊ͜͡ 🍏 ULTILIZE:* ${prefix}Menu
+*║ᬊ͜͡ 🔥 E LEIA O MENU...*
 *║*
-*║ᬊ͜͡ ❕DÚVIDAS/SUGESTÕES: ${prefix}Dono`,
+*║ᬊ͜͡ ❕DÚVIDAS/SUGESTÕES:* ${prefix}Dono`,
 `${NomeDoBot}`, 
-[{buttonId:`${prefix}menu`, buttonText: {displayText:`💦 MENU`}, type: 1}]);
+[{buttonId:`${prefix}menu`, buttonText: {displayText:`🍏 MENU`}, type: 1}]);
 
 }
 }
